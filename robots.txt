@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Place this file at the site root:
+# https://livingbloom.life/robots.txt
+#
+# This public brochure-style site is intended to be crawlable.
+# Add a Sitemap line here later if you publish /sitemap.xml.

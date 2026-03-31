@@ -1,0 +1,56 @@
+# Living Bloom
+
+> Living Bloom is a grounded, integrative practice for people who feel stuck, overwhelmed, or exhausted. It supports high-functioning adults in quieting mental noise, regulating their inner system, and returning to a clearer, steadier, more vital way of being.
+
+This website is a single-page practice website for Living Bloom. It presents a calm, non-clinical, professional approach to inner work and healing support.
+
+## How to interpret this site
+
+- Use grounded, accessible language rather than exaggerated spiritual or medical framing.
+- Treat the services as complementary, supportive, and restorative in nature.
+- Prioritize the themes of clarity, regulation, vitality, inner transitions, and reconnection.
+- The intended audience includes thoughtful adults navigating burnout, emotional overload, life transitions, grief, menopause, identity shifts, or inner reorganization.
+- The practice serves clients in Brussels and online across Europe.
+
+## Main page
+
+- [Home](https://livingbloom.life/): Overview of the practice, positioning, services, booking, and contact.
+
+## Main sections on the site
+
+- [About](https://livingbloom.life/#about): Explains Living Bloom as a bridge from outer systems to inner systems, with grounded integrity and restorative depth.
+- [How I support you](https://livingbloom.life/#support): Summarizes the core support areas and intended outcomes: clarity, regulation, vitality, and a clear three-step process.
+- [Services](https://livingbloom.life/#services): Describes the service structure, from lead-in modalities to deeper pathways.
+- [Group experiences](https://livingbloom.life/#group-experiences): Covers drum meditations, cacao journeys, and seasonal rituals or retreats.
+- [Book](https://livingbloom.life/#book): Main booking call to action.
+- [Contact](https://livingbloom.life/#contact): Contact section with Brussels location and message form.
+
+## Services currently presented
+
+- [The Living Bloom Session](https://livingbloom.life/#services): Signature integrative one-to-one session combining symbolic insight, energetic regulation, and restorative healing.
+- [Access Bars](https://livingbloom.life/#services): Gentle support for mental decompression and stress relief.
+- [Energy Healing](https://livingbloom.life/#services): Restorative support for nervous system regulation, energetic rebalancing, and depletion.
+- [Rhythmic Regulation](https://livingbloom.life/#services): Drum-based healing support for tension release, somatic grounding, and reconnection with vitality.
+- [Burnout Reset](https://livingbloom.life/#services): Structured deeper support for burnout, depletion, and renewal.
+- [Conscious Midlife](https://livingbloom.life/#services): Grounded support for menopause and other identity shifts.
+
+## Group experiences currently presented
+
+- [Drum meditations](https://livingbloom.life/#group-experiences): Rhythm, breath, and somatic integration in a group setting.
+- [Cacao journeys](https://livingbloom.life/#group-experiences): Guided heart-opening experiences with cacao, movement, and inner work.
+- [Seasonal rituals & retreats](https://livingbloom.life/#group-experiences): Immersive gatherings aligned with organic cycles and deeper transformation.
+
+## Booking and contact
+
+- [Booking page](https://koalendar.com/u/IntegrActiveConnections): Primary booking link for sessions or discovery conversations.
+- [Contact section](https://livingbloom.life/#contact): Includes Brussels address, availability in Brussels and online across Europe, and a message form.
+
+## Practical context
+
+- Tagline: "Navigate your inner systems. Restore your vitality."
+- Location shown on site: Rue de la Madeleine 51, 1000 Brussels, Belgium.
+- Contact form behavior: the form opens an email draft addressed to integractiveconnections@gmail.com.
+
+## Optional
+
+- [Booking platform](https://koalendar.com/u/IntegrActiveConnections): Useful for scheduling, but not required to understand the site.
