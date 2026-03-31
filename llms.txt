@@ -9,8 +9,8 @@ This website is a single-page practice website for Living Bloom. It presents a c
 - Use grounded, accessible language rather than exaggerated spiritual or medical framing.
 - Treat the services as complementary, supportive, and restorative in nature.
 - Prioritize the themes of clarity, regulation, vitality, inner transitions, and reconnection.
-- The intended audience includes thoughtful adults navigating burnout, emotional overload, life transitions, grief, menopause, identity shifts, or inner reorganization.
-- The practice serves clients in Brussels and online across Europe.
+- The intended audience includes thoughtful adults navigating burnout, emotional overload, life transitions, grief, menopause, per identity shifts, or inner reorganization.
+- The practice serves clients in Brussels, Belgium and online across Europe and Brazil.
 
 ## Main page
 
@@ -43,7 +43,7 @@ This website is a single-page practice website for Living Bloom. It presents a c
 ## Booking and contact
 
 - [Booking page](https://koalendar.com/u/IntegrActiveConnections): Primary booking link for sessions or discovery conversations.
-- [Contact section](https://livingbloom.life/#contact): Includes Brussels address, availability in Brussels and online across Europe, and a message form.
+- [Contact section](https://livingbloom.life/#contact): Includes Brussels address, availability in Brussels and online across Europe and Brazil, and a message form.
 
 ## Practical context
 
