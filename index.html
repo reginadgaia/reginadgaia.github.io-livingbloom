@@ -3,261 +3,804 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Living Bloom - Nurturing Your Spiritual Journey</title>
+    <title>Living Bloom | Integrative Coaching & Healing</title>
+    <meta name="description" content="Living Bloom offers integrative coaching, healing sessions, group experiences, and immersive journeys for people navigating transition, stress, and reconnection.">
     <style>
+        :root {
+            --primary: #660240;
+            --primary-2: #4f0333;
+            --secondary: #334139;
+            --accent: #EAB308;
+            --bg: #fbf7f8;
+            --surface: #ffffff;
+            --surface-soft: #f6eef2;
+            --text: #24181f;
+            --muted: #6e5a65;
+            --line: rgba(102, 2, 64, 0.12);
+            --shadow: 0 18px 40px rgba(31, 17, 25, 0.08);
+            --radius: 22px;
+            --max: 1180px;
+        }
+
         * {
+            box-sizing: border-box;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
         }
 
         body {
-            font-family: 'Georgia', 'Times New Roman', serif;
-            background: linear-gradient(135deg, #FDF2F4 0%, #F8E8E8 50%, #F2D7D7 100%);
-            min-height: 100vh;
-            color: #4A2C2A;
+            font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            color: var(--text);
+            background:
+                radial-gradient(circle at top left, rgba(234, 179, 8, 0.08), transparent 32%),
+                radial-gradient(circle at top right, rgba(102, 2, 64, 0.07), transparent 28%),
+                var(--bg);
+            line-height: 1.6;
         }
 
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 60px 20px;
-            text-align: center;
-        }
-
-        header {
-            margin-bottom: 60px;
-        }
-
-        h1 {
-            font-size: 3.5rem;
-            color: #722F37;
-            margin-bottom: 20px;
-            text-shadow: 2px 2px 4px rgba(114, 47, 55, 0.1);
-        }
-
-        .subtitle {
-            font-size: 1.4rem;
-            color: #8B3A3A;
-            font-style: italic;
-            letter-spacing: 2px;
-        }
-
-        .divider {
-            width: 150px;
-            height: 3px;
-            background: linear-gradient(90deg, #722F37, #954E5A, #722F37);
-            margin: 40px auto;
-            border-radius: 2px;
-        }
-
-        .spiritual-section {
-            background: linear-gradient(145deg, #FDF2F4, #F5E6E8);
-            border-radius: 20px;
-            padding: 50px 40px;
-            margin: 40px 0;
-            box-shadow: 0 10px 40px rgba(114, 47, 55, 0.15);
-            border: 2px solid rgba(149, 78, 90, 0.3);
-        }
-
-        .quote {
-            font-size: 1.8rem;
-            font-style: italic;
-            color: #5D3A3A;
-            line-height: 1.8;
-            margin-bottom: 20px;
-        }
-
-        .quote-author {
-            font-size: 1.1rem;
-            color: #8B3A3A;
-            margin-top: 15px;
-        }
-
-        .wisdom-cards {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-            margin: 50px 0;
-        }
-
-        .card {
-            background: linear-gradient(145deg, #FDF2F4, #EBDADA);
-            border-radius: 15px;
-            padding: 35px 25px;
-            box-shadow: 0 8px 25px rgba(114, 47, 55, 0.12);
-            border-left: 4px solid #722F37;
-            text-align: left;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 35px rgba(114, 47, 55, 0.2);
-        }
-
-        .card h3 {
-            color: #722F37;
-            font-size: 1.4rem;
-            margin-bottom: 15px;
-        }
-
-        .card p {
-            color: #5D3A3A;
-            line-height: 1.7;
-            font-size: 1rem;
-        }
-
-        .affirmation {
-            background: linear-gradient(135deg, #954E5A, #7D4049, #6B353E);
-            color: #FDF2F4;
-            padding: 40px;
-            border-radius: 20px;
-            margin: 50px 0;
-            box-shadow: 0 10px 40px rgba(114, 47, 55, 0.3);
-        }
-
-        .affirmation h2 {
-            font-size: 1.8rem;
-            margin-bottom: 20px;
-        }
-
-        .affirmation p {
-            font-size: 1.2rem;
-            line-height: 1.8;
-        }
-
-        .prayer {
-            background: linear-gradient(145deg, #FDF2F4, #F0E0E0);
-            border: 2px dashed #722F37;
-            border-radius: 15px;
-            padding: 40px;
-            margin: 40px 0;
-            font-size: 1.1rem;
-            line-height: 2;
-            color: #4A2C2A;
-        }
-
-        .prayer h3 {
-            color: #722F37;
-            margin-bottom: 20px;
-            font-size: 1.5rem;
-        }
-
-        footer {
-            margin-top: 60px;
-            padding: 30px;
-            color: #8B3A3A;
-            font-size: 0.95rem;
-        }
-
-        footer a {
-            color: #722F37;
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
-
-        .lotus-icon {
-            font-size: 3rem;
-            margin-bottom: 20px;
-        .logo {
-            max-width: 80px; /* Adjust this value to scale your logo appropriately */
-            margin: 0 auto 20px auto;
+        img {
+            max-width: 100%;
             display: block;
         }
 
-        @media (max-width: 600px) {
-            h1 {
-                font-size: 2.2rem;
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .container {
+            width: min(var(--max), calc(100% - 2rem));
+            margin: 0 auto;
+        }
+
+        .section {
+            padding: 88px 0;
+        }
+
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.84rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--primary);
+            margin-bottom: 18px;
+        }
+
+        .eyebrow::before {
+            content: "";
+            width: 28px;
+            height: 1px;
+            background: currentColor;
+        }
+
+        h1, h2, h3, h4 {
+            line-height: 1.08;
+            letter-spacing: -0.03em;
+        }
+
+        h1 {
+            font-size: clamp(3rem, 5vw, 5.25rem);
+            max-width: 11ch;
+        }
+
+        h2 {
+            font-size: clamp(2rem, 3vw, 3.25rem);
+            max-width: 12ch;
+        }
+
+        h3 {
+            font-size: 1.35rem;
+        }
+
+        p {
+            color: var(--muted);
+            font-size: 1.03rem;
+        }
+
+        .lead {
+            font-size: 1.14rem;
+            max-width: 62ch;
+        }
+
+        .site-header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(251, 247, 248, 0.88);
+            backdrop-filter: blur(16px);
+            border-bottom: 1px solid rgba(102, 2, 64, 0.08);
+        }
+
+        .nav {
+            min-height: 78px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 24px;
+        }
+
+        .brand {
+            display: inline-flex;
+            align-items: center;
+            gap: 14px;
+            font-weight: 700;
+            color: var(--primary);
+            letter-spacing: -0.02em;
+        }
+
+        .brand img {
+            width: 44px;
+            height: 44px;
+            object-fit: contain;
+            border-radius: 50%;
+        }
+
+        .brand-text {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.05;
+        }
+
+        .brand-text small {
+            color: var(--muted);
+            font-size: 0.78rem;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 28px;
+            flex-wrap: wrap;
+        }
+
+        .nav-links a {
+            font-size: 0.96rem;
+            font-weight: 600;
+            color: #4e3c46;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .button,
+        .button-secondary {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            min-height: 50px;
+            padding: 0 24px;
+            border-radius: 999px;
+            font-weight: 700;
+            transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+        }
+
+        .button:hover,
+        .button-secondary:hover {
+            transform: translateY(-1px);
+        }
+
+        .button {
+            background: var(--primary);
+            color: white;
+            box-shadow: 0 12px 28px rgba(102, 2, 64, 0.22);
+        }
+
+        .button:hover {
+            background: var(--primary-2);
+        }
+
+        .button-secondary {
+            background: white;
+            color: var(--secondary);
+            border: 1px solid rgba(51, 65, 57, 0.14);
+        }
+
+        .hero {
+            padding: 70px 0 56px;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: minmax(0, 1.25fr) minmax(320px, 0.95fr);
+            gap: 46px;
+            align-items: center;
+        }
+
+        .hero-copy p {
+            margin-top: 22px;
+        }
+
+        .hero-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+            margin-top: 34px;
+        }
+
+        .hero-note {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 18px;
+            margin-top: 26px;
+            color: var(--secondary);
+            font-size: 0.95rem;
+            font-weight: 600;
+        }
+
+        .hero-note span::before {
+            content: "•";
+            color: var(--accent);
+            margin-right: 8px;
+        }
+
+        .hero-panel {
+            background: linear-gradient(180deg, rgba(255,255,255,0.92), rgba(246,238,242,0.96));
+            border: 1px solid rgba(102, 2, 64, 0.10);
+            box-shadow: var(--shadow);
+            border-radius: 28px;
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-panel::after {
+            content: "";
+            position: absolute;
+            inset: auto -40px -56px auto;
+            width: 180px;
+            height: 180px;
+            background: radial-gradient(circle, rgba(234, 179, 8, 0.20), transparent 68%);
+            pointer-events: none;
+        }
+
+        .panel-label {
+            font-size: 0.82rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--primary);
+            margin-bottom: 18px;
+        }
+
+        .panel-quote {
+            font-size: 1.3rem;
+            color: var(--text);
+            margin-bottom: 22px;
+            line-height: 1.45;
+        }
+
+        .panel-list {
+            display: grid;
+            gap: 14px;
+        }
+
+        .panel-item {
+            background: rgba(255,255,255,0.78);
+            border: 1px solid rgba(102, 2, 64, 0.08);
+            border-radius: 18px;
+            padding: 16px 18px;
+        }
+
+        .panel-item strong {
+            display: block;
+            color: var(--secondary);
+            font-size: 0.98rem;
+            margin-bottom: 3px;
+        }
+
+        .panel-item span {
+            color: var(--muted);
+            font-size: 0.95rem;
+        }
+
+        .strip {
+            padding: 18px 0;
+            border-top: 1px solid var(--line);
+            border-bottom: 1px solid var(--line);
+            background: rgba(255,255,255,0.55);
+        }
+
+        .strip-grid {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 18px;
+        }
+
+        .strip-card {
+            padding: 14px 0;
+        }
+
+        .strip-card strong {
+            display: block;
+            color: var(--primary);
+            font-size: 0.92rem;
+            margin-bottom: 6px;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+        }
+
+        .split {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 44px;
+            align-items: start;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 24px;
+            margin-top: 34px;
+        }
+
+        .card {
+            background: var(--surface);
+            border-radius: var(--radius);
+            padding: 28px;
+            box-shadow: var(--shadow);
+            border: 1px solid rgba(102, 2, 64, 0.08);
+        }
+
+        .card .kicker {
+            display: inline-block;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.10em;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 14px;
+        }
+
+        .card p,
+        .about-box p,
+        .benefit-list li,
+        .contact-box p,
+        .footer p {
+            font-size: 0.98rem;
+        }
+
+        .about-box {
+            background: linear-gradient(180deg, #fff, #fbf6f8);
+            border: 1px solid rgba(102, 2, 64, 0.08);
+            border-radius: 26px;
+            box-shadow: var(--shadow);
+            padding: 34px;
+        }
+
+        .about-box p + p {
+            margin-top: 16px;
+        }
+
+        .benefit-list {
+            list-style: none;
+            display: grid;
+            gap: 14px;
+            margin-top: 24px;
+        }
+
+        .benefit-list li {
+            position: relative;
+            padding-left: 24px;
+            color: var(--muted);
+        }
+
+        .benefit-list li::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 10px;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: var(--accent);
+            box-shadow: 0 0 0 4px rgba(234, 179, 8, 0.18);
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 20px;
+            margin-top: 34px;
+        }
+
+        .feature {
+            background: var(--surface);
+            border: 1px solid rgba(51, 65, 57, 0.10);
+            border-radius: 20px;
+            padding: 24px;
+        }
+
+        .feature h3 {
+            margin-bottom: 10px;
+            color: var(--secondary);
+        }
+
+        .cta-band {
+            padding: 40px;
+            border-radius: 30px;
+            background: linear-gradient(135deg, var(--primary), #7c1457 58%, #8d6a13 150%);
+            color: white;
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) auto;
+            gap: 28px;
+            align-items: center;
+            box-shadow: 0 24px 48px rgba(102, 2, 64, 0.24);
+        }
+
+        .cta-band p {
+            color: rgba(255,255,255,0.84);
+            max-width: 60ch;
+            margin-top: 12px;
+        }
+
+        .cta-band .button-secondary {
+            border: 1px solid rgba(255,255,255,0.22);
+            background: white;
+            color: var(--primary);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.9fr);
+            gap: 28px;
+            margin-top: 34px;
+        }
+
+        .contact-box {
+            background: var(--surface);
+            border-radius: 24px;
+            border: 1px solid rgba(102, 2, 64, 0.08);
+            padding: 30px;
+            box-shadow: var(--shadow);
+        }
+
+        .contact-list {
+            list-style: none;
+            display: grid;
+            gap: 14px;
+            margin-top: 18px;
+        }
+
+        .contact-list li {
+            color: var(--muted);
+        }
+
+        .contact-list strong {
+            color: var(--text);
+            display: block;
+            margin-bottom: 3px;
+        }
+
+        .footer {
+            padding: 32px 0 44px;
+            border-top: 1px solid var(--line);
+        }
+
+        .footer-grid {
+            display: flex;
+            justify-content: space-between;
+            gap: 22px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .footer-nav {
+            display: flex;
+            gap: 18px;
+            flex-wrap: wrap;
+            color: var(--muted);
+            font-weight: 600;
+        }
+
+        @media (max-width: 1040px) {
+            .hero-grid,
+            .split,
+            .contact-grid,
+            .cta-band,
+            .strip-grid,
+            .card-grid,
+            .feature-grid {
+                grid-template-columns: 1fr;
             }
-            .quote {
-                font-size: 1.3rem;
+
+            .cta-band {
+                padding: 34px 26px;
             }
-            .spiritual-section {
-                padding: 30px 20px;
+        }
+
+        @media (max-width: 760px) {
+            .nav {
+                padding: 14px 0;
+                align-items: flex-start;
+                flex-direction: column;
+            }
+
+            .nav-links {
+                gap: 16px;
+            }
+
+            .hero {
+                padding-top: 42px;
+            }
+
+            .section {
+                padding: 68px 0;
+            }
+
+            .card,
+            .hero-panel,
+            .about-box,
+            .contact-box {
+                padding: 24px;
+            }
+
+            .hero-actions {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .button,
+            .button-secondary {
+                width: 100%;
             }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <span class="lotus-icon">🪷</span>
-            <img src="assets/Living Bloom Logo.png" alt="Living Bloom Logo" class="logo">
-            <h1>Living Bloom</h1>
-            <p class="subtitle">Where the Soul Finds Its Light</p>
-        </header>
+    <header class="site-header">
+        <div class="container nav">
+            <a class="brand" href="#top" aria-label="Living Bloom home">
+                <img src="assets/Living Bloom Logo.png" alt="Living Bloom Logo">
+                <span class="brand-text">
+                    <span>Living Bloom</span>
+                    <small>Coaching & Healing</small>
+                </span>
+            </a>
 
-        <div class="divider"></div>
+            <nav class="nav-links" aria-label="Primary navigation">
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#approach">Approach</a>
+                <a href="#contact">Contact</a>
+                <a class="button" href="#contact">Book a Consultation</a>
+            </nav>
+        </div>
+    </header>
 
-        <section class="spiritual-section">
-            <p class="quote">
-                "Within you, there is a stillness and a sanctuary to which you can retreat at any time and be yourself."
-            </p>
-            <p class="quote-author">— Hermann Hesse</p>
+    <main id="top">
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <span class="eyebrow">Integrative support for transition</span>
+                    <h1>Come back to yourself with clarity, steadiness, and depth.</h1>
+                    <p class="lead">
+                        Living Bloom offers a grounded blend of coaching, energy-based support, rhythm, and ritual for people moving through burnout, emotional overload, life transitions, or a deeper call for reconnection.
+                    </p>
+                    <div class="hero-actions">
+                        <a class="button" href="#contact">Book a consultation</a>
+                        <a class="button-secondary" href="#services">Explore services</a>
+                    </div>
+                    <div class="hero-note" aria-label="Highlights">
+                        <span>1:1 sessions</span>
+                        <span>Group experiences</span>
+                        <span>Immersive journeys</span>
+                    </div>
+                </div>
+
+                <aside class="hero-panel" aria-label="Overview panel">
+                    <div class="panel-label">What this work supports</div>
+                    <p class="panel-quote">
+                        A professional, structured space for inner recalibration — especially when life feels noisy, heavy, or out of alignment.
+                    </p>
+                    <div class="panel-list">
+                        <div class="panel-item">
+                            <strong>Emotional regulation</strong>
+                            <span>Support for stress, overwhelm, and nervous system depletion.</span>
+                        </div>
+                        <div class="panel-item">
+                            <strong>Clarity in transition</strong>
+                            <span>Guidance when identity, priorities, or direction are shifting.</span>
+                        </div>
+                        <div class="panel-item">
+                            <strong>Deeper reconnection</strong>
+                            <span>Practices that restore vitality, presence, and inner coherence.</span>
+                        </div>
+                    </div>
+                </aside>
+            </div>
         </section>
 
-        <section class="wisdom-cards">
-            <div class="card">
-                <h3>✨ Individual Work</h3>
-                 <p>
-                1. The Living Bloom Session<br>
-                2. Astro-Insight: Strategic Navigation<br>
-                3. Access Bars: Mental Decompression<br>
-                4. Energy Healing (Reiki-based)<br>
-                5. Rhythmic Regulation (Drum Healing)<br>
-                6. The Burnout Reset Protocol<br>
-                7. The Integral Vitality Journey<br>
-            </p>
+        <section class="strip" aria-label="Service categories">
+            <div class="container strip-grid">
+                <div class="strip-card">
+                    <strong>Individual work</strong>
+                    <p>Personalised sessions for focused support and transformation.</p>
+                </div>
+                <div class="strip-card">
+                    <strong>Group experiences</strong>
+                    <p>Collective spaces for rhythm, ritual, and embodied reconnection.</p>
+                </div>
+                <div class="strip-card">
+                    <strong>Immersive journeys</strong>
+                    <p>Retreat-style experiences designed for deeper reset and perspective.</p>
+                </div>
+                <div class="strip-card">
+                    <strong>Integrative approach</strong>
+                    <p>Practical, intuitive, and holistic support adapted to the person.</p>
+                </div>
             </div>
-            <div class="card">
-                <h3>💫 Group Offers</h3>
-                <p>
-                </em>Communal spaces for ritual, somatic integration, and collective vitality.</em><br>
-                1. Rhythmic Immersion & Drum Meditations<br>
-                2. Cacao Journeys & Heart-Opening Rituals<br>
-                3. Seasonal Rituals in nature<br>
+        </section>
+
+        <section class="section" id="about">
+            <div class="container split">
+                <div>
+                    <span class="eyebrow">About Living Bloom</span>
+                    <h2>A more refined way to approach healing and change.</h2>
+                    <p class="lead" style="margin-top: 22px;">
+                        This work is for people who want more than temporary relief. It supports meaningful inner movement — with depth, care, and enough structure to translate insight into real life.
+                    </p>
+                    <ul class="benefit-list">
+                        <li>For periods of burnout, emotional fatigue, or internal fragmentation.</li>
+                        <li>For moments of transition that require discernment, steadiness, and support.</li>
+                        <li>For those seeking a grounded space that does not rely on clichés or excess.</li>
+                    </ul>
+                </div>
+
+                <div class="about-box">
+                    <p>
+                        Living Bloom integrates coaching, energetic work, rhythm-based practices, and ritual elements into a personalised process that meets each person where they are.
+                    </p>
+                    <p>
+                        The intention is not to impose a formula, but to create the conditions for greater clarity, emotional balance, resilience, and reconnection with what feels true.
+                    </p>
+                    <p>
+                        The result is an experience that feels both intuitive and well held: spacious, professional, and anchored in real transformation.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="services" style="background: rgba(255,255,255,0.55); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);">
+            <div class="container">
+                <span class="eyebrow">Services</span>
+                <h2>Ways to work together</h2>
+                <p class="lead" style="margin-top: 22px; max-width: 72ch;">
+                    The homepage now follows a clearer professional outline similar to the reference you shared: concise introduction, visible offers, a defined approach, and a stronger path to contact.
                 </p>
+
+                <div class="card-grid">
+                    <article class="card">
+                        <span class="kicker">01 · Individual sessions</span>
+                        <h3>The Living Bloom Session</h3>
+                        <p style="margin-top: 14px;">
+                            Personalised 1:1 work that may draw from coaching, energy healing, Access Bars, drum-based support, and other modalities according to the client’s needs.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <span class="kicker">02 · Group offers</span>
+                        <h3>Rituals, drum meditations, and circles</h3>
+                        <p style="margin-top: 14px;">
+                            Group spaces for emotional release, grounding, collective reflection, and embodied reconnection through rhythm, cacao, movement, and seasonal themes.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <span class="kicker">03 · Journeys</span>
+                        <h3>Immersive retreats and experiences</h3>
+                        <p style="margin-top: 14px;">
+                            Multi-day experiences for deeper reset, integration, and perspective — designed for people ready to step out of routine and into meaningful inner movement.
+                        </p>
+                    </article>
+                </div>
             </div>
-            <div class="card">
-                <h3>🌅  Journeys</h3>
-                <p>The Experience: 3–6 day immersive "Adventures" for deep reconnection and systemic overhaul.</p>
+        </section>
+
+        <section class="section" id="approach">
+            <div class="container">
+                <span class="eyebrow">Approach</span>
+                <h2>Professional in structure. Human in depth.</h2>
+
+                <div class="feature-grid">
+                    <article class="feature">
+                        <h3>Personalised</h3>
+                        <p>Each process is shaped around the person, rather than fitted into a pre-set method or rigid package.</p>
+                    </article>
+                    <article class="feature">
+                        <h3>Integrative</h3>
+                        <p>Different modalities can be combined to support emotional, energetic, and practical dimensions of change.</p>
+                    </article>
+                    <article class="feature">
+                        <h3>Grounded</h3>
+                        <p>The tone is calm, clear, and anchored — suitable even for people who prefer a more structured or non-performative environment.</p>
+                    </article>
+                    <article class="feature">
+                        <h3>Transformational</h3>
+                        <p>The goal is not only relief, but reconnection with vitality, direction, and a more coherent sense of self.</p>
+                    </article>
+                </div>
             </div>
         </section>
 
-        <section class="affirmation">
-            <h2>✨ Daily Affirmation ✨</h2>
-            <p>I am worthy of love, peace, and joy. I release what no longer serves me and embrace the light within. Today, I choose kindness—inward and outward.</p>
+        <section class="section">
+            <div class="container">
+                <div class="cta-band">
+                    <div>
+                        <span class="eyebrow" style="color: rgba(255,255,255,0.82); margin-bottom: 10px;">Next step</span>
+                        <h2 style="max-width: 11ch;">Begin with a first conversation.</h2>
+                        <p>
+                            Use this section to invite people into a discovery call, consultation, or first inquiry. Replace the link below with your booking page, email, or contact form when ready.
+                        </p>
+                    </div>
+                    <div>
+                        <a class="button-secondary" href="#contact">Go to contact</a>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section class="prayer">
-            <h3>🙏 A Moment of Stillness</h3>
-            <p>
-                May this moment bring you comfort and clarity.<br>
-                May you feel the warmth of universal love surrounding you.<br>
-                May peace flow through you like a gentle river,<br>
-                washing away worry and filling your heart with hope.<br><br>
-                <em>You are exactly where you need to be.</em>
-            </p>
+        <section class="section" id="contact" style="padding-top: 0;">
+            <div class="container">
+                <span class="eyebrow">Contact</span>
+                <h2>Make it easy for the right people to reach you.</h2>
+
+                <div class="contact-grid">
+                    <div class="contact-box">
+                        <p>
+                            This section is intentionally structured for conversion. Insert your preferred contact path here: email, booking link, Instagram, WhatsApp, or a contact form.
+                        </p>
+                        <ul class="contact-list">
+                            <li>
+                                <strong>Booking link</strong>
+                                Add your Calendly or scheduling URL.
+                            </li>
+                            <li>
+                                <strong>Email</strong>
+                                Add your professional contact email.
+                            </li>
+                            <li>
+                                <strong>Location / format</strong>
+                                Brussels, online, or both.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="contact-box">
+                        <p><strong style="color: var(--text);">Recommended next edits</strong></p>
+                        <ul class="contact-list" style="margin-top: 14px;">
+                            <li>Replace placeholder contact details with your real links.</li>
+                            <li>Add one professional portrait or brand image in the hero or about section.</li>
+                            <li>Insert 2–3 testimonials once available.</li>
+                            <li>Create separate pages for individual sessions, events, and retreats later.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </section>
+    </main>
 
-        <div class="divider"></div>
-
-        <section class="spiritual-section">
-            <p class="quote">
-                "The soul always knows what to do to heal itself. The challenge is to silence the mind."
-            </p>
-            <p class="quote-author">— Caroline Myss</p>
-        </section>
-
-        <footer>
-            <p>🪷 Take a deep breath. You are enough. You have always been enough. 🪷</p>
-            <br>
-            <p>Living Bloom — Nurturing spiritual growth, one moment at a time</p>
-        </footer>
-    </div>
+    <footer class="footer">
+        <div class="container footer-grid">
+            <p>© Living Bloom. Integrative coaching and healing for meaningful transition.</p>
+            <nav class="footer-nav" aria-label="Footer navigation">
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#approach">Approach</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </footer>
 </body>
 </html>
