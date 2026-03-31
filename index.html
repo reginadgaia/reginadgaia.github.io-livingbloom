@@ -250,9 +250,24 @@
             border: 1px solid rgba(102, 2, 64, 0.10);
             box-shadow: var(--shadow);
             border-radius: 28px;
-            padding: 30px;
+            padding: 24px;
             position: relative;
             overflow: hidden;
+        }
+
+        .hero-portrait {
+            border-radius: 24px;
+            overflow: hidden;
+            margin-bottom: 20px;
+            aspect-ratio: 4 / 5;
+            background: rgba(102, 2, 64, 0.05);
+            border: 1px solid rgba(102, 2, 64, 0.08);
+        }
+
+        .hero-portrait img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
 
         .hero-panel::after {
@@ -483,6 +498,15 @@
             margin-bottom: 3px;
         }
 
+        .contact-list a {
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        .contact-list a:hover {
+            text-decoration: underline;
+        }
+
         .footer {
             padding: 32px 0 44px;
             border-top: 1px solid var(--line);
@@ -574,7 +598,7 @@
                 <a href="#services">Services</a>
                 <a href="#approach">Approach</a>
                 <a href="#contact">Contact</a>
-                <a class="button" href="#contact">Book a Consultation</a>
+                <a class="button" href="https://koalendar.com/u/IntegrActiveConnections" target="_blank" rel="noopener noreferrer">Book a Consultation</a>
             </nav>
         </div>
     </header>
@@ -589,7 +613,7 @@
                         Living Bloom offers a grounded blend of coaching, energy-based support, rhythm, and ritual for people moving through burnout, emotional overload, life transitions, or a deeper call for reconnection.
                     </p>
                     <div class="hero-actions">
-                        <a class="button" href="#contact">Book a consultation</a>
+                        <a class="button" href="https://koalendar.com/u/IntegrActiveConnections" target="_blank" rel="noopener noreferrer">Book a consultation</a>
                         <a class="button-secondary" href="#services">Explore services</a>
                     </div>
                     <div class="hero-note" aria-label="Highlights">
@@ -599,7 +623,10 @@
                     </div>
                 </div>
 
-                <aside class="hero-panel" aria-label="Overview panel">
+                <aside class="hero-panel" aria-label="Portrait and overview panel">
+                    <div class="hero-portrait">
+                        <img src="assets/mara2.jpg" alt="Portrait of Mara from Living Bloom">
+                    </div>
                     <div class="panel-label">What this work supports</div>
                     <p class="panel-quote">
                         A professional, structured space for inner recalibration — especially when life feels noisy, heavy, or out of alignment.
@@ -741,11 +768,11 @@
                         <span class="eyebrow" style="color: rgba(255,255,255,0.82); margin-bottom: 10px;">Next step</span>
                         <h2 style="max-width: 11ch;">Begin with a first conversation.</h2>
                         <p>
-                            Use this section to invite people into a discovery call, consultation, or first inquiry. Replace the link below with your booking page, email, or contact form when ready.
+                            Book a first conversation or session directly through the scheduling page below.
                         </p>
                     </div>
                     <div>
-                        <a class="button-secondary" href="#contact">Go to contact</a>
+                        <a class="button-secondary" href="https://koalendar.com/u/IntegrActiveConnections" target="_blank" rel="noopener noreferrer">Book now</a>
                     </div>
                 </div>
             </div>
@@ -759,16 +786,16 @@
                 <div class="contact-grid">
                     <div class="contact-box">
                         <p>
-                            This section is intentionally structured for conversion. Insert your preferred contact path here: email, booking link, Instagram, WhatsApp, or a contact form.
+                            The easiest way to get started is to book directly through the scheduling page below.
                         </p>
                         <ul class="contact-list">
                             <li>
                                 <strong>Booking link</strong>
-                                Add your Calendly or scheduling URL.
+                                <a href="https://koalendar.com/u/IntegrActiveConnections" target="_blank" rel="noopener noreferrer">koalendar.com/u/IntegrActiveConnections</a>
                             </li>
                             <li>
-                                <strong>Email</strong>
-                                Add your professional contact email.
+                                <strong>Sessions</strong>
+                                Individual support, consultations, and other guided offers.
                             </li>
                             <li>
                                 <strong>Location / format</strong>
@@ -778,12 +805,12 @@
                     </div>
 
                     <div class="contact-box">
-                        <p><strong style="color: var(--text);">Recommended next edits</strong></p>
+                        <p><strong style="color: var(--text);">Next recommended edits</strong></p>
                         <ul class="contact-list" style="margin-top: 14px;">
-                            <li>Replace placeholder contact details with your real links.</li>
-                            <li>Add one professional portrait or brand image in the hero or about section.</li>
+                            <li>Add your professional email and Instagram or WhatsApp.</li>
                             <li>Insert 2–3 testimonials once available.</li>
                             <li>Create separate pages for individual sessions, events, and retreats later.</li>
+                            <li>Refine the service labels to match your final offer names.</li>
                         </ul>
                     </div>
                 </div>
