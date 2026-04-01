@@ -1,1143 +1,417 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Living Bloom | Navigate Your Inner Systems</title>
-  <meta name="description" content="Grounded integrative healing and guidance for people navigating burnout, emotional overload, and life transitions. Book a Living Bloom session online or in Brussels.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --burgundy: #660240;
-      --green: #334139;
-      --gold: #EAB308;
-      --stone: #F5F5F4;
-      --white: #ffffff;
-      --ink: #1d1b20;
-      --muted: #5f5a64;
-      --line: rgba(29, 27, 32, 0.1);
-      --shadow: 0 18px 48px rgba(35, 23, 31, 0.1);
-      --radius-xl: 28px;
-      --radius-lg: 20px;
-      --radius-md: 14px;
-      --max: 1180px;
-    }
-
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      margin: 0;
-      font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      color: var(--ink);
-      background: var(--stone);
-      line-height: 1.6;
-    }
-
-    img { max-width: 100%; display: block; }
-    a { color: inherit; text-decoration: none; }
-
-    .container {
-      width: min(var(--max), calc(100% - 2rem));
-      margin: 0 auto;
-    }
-
-    .section {
-      padding: 5.5rem 0;
-    }
-
-    .eyebrow {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.6rem;
-      padding: 0.5rem 0.9rem;
-      border: 1px solid rgba(102, 2, 64, 0.14);
-      border-radius: 999px;
-      background: rgba(255, 255, 255, 0.72);
-      color: var(--burgundy);
-      font-size: 0.82rem;
-      font-weight: 600;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-    }
-
-    .eyebrow::before {
-      content: "";
-      width: 0.42rem;
-      height: 0.42rem;
-      border-radius: 50%;
-      background: var(--gold);
-      box-shadow: 0 0 0 5px rgba(234, 179, 8, 0.14);
-    }
-
-    h1, h2, h3 {
-      margin: 0;
-      font-family: "Cormorant Garamond", Georgia, serif;
-      line-height: 0.98;
-      letter-spacing: -0.02em;
-    }
-
-    h1 {
-      font-size: clamp(3rem, 7vw, 5.7rem);
-      color: var(--burgundy);
-    }
-
-    h2 {
-      font-size: clamp(2.3rem, 4vw, 4rem);
-      color: var(--burgundy);
-    }
-
-    h3 {
-      font-size: 1.65rem;
-      color: var(--burgundy);
-    }
-
-    p {
-      margin: 0;
-      color: var(--muted);
-      font-size: 1rem;
-    }
-
-    .lead {
-      font-size: 1.12rem;
-      line-height: 1.8;
-    }
-
-    .nav-shell {
-      position: sticky;
-      top: 0;
-      z-index: 30;
-      backdrop-filter: blur(12px);
-      background: rgba(245, 245, 244, 0.86);
-      border-bottom: 1px solid rgba(29, 27, 32, 0.06);
-    }
-
-    .nav {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 1rem;
-      min-height: 84px;
-    }
-
-    .brand {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.9rem;
-      min-width: 0;
-    }
-
-    .brand img {
-      width: 48px;
-      height: 48px;
-      object-fit: contain;
-      border-radius: 12px;
-      background: rgba(255, 255, 255, 0.6);
-      padding: 0.2rem;
-    }
-
-    .brand-name {
-      font-size: 1.05rem;
-      font-weight: 700;
-      letter-spacing: 0.03em;
-      color: var(--burgundy);
-    }
-
-    .brand-tag {
-      display: block;
-      font-size: 0.75rem;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: var(--green);
-      opacity: 0.9;
-      margin-top: 0.15rem;
-    }
-
-    .nav-links {
-      display: flex;
-      align-items: center;
-      gap: 1.6rem;
-      font-size: 0.96rem;
-      color: var(--muted);
-    }
-
-    .nav-links a:hover { color: var(--burgundy); }
-
-    .button,
-    .button-secondary,
-    .button-ghost {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 0.55rem;
-      border-radius: 999px;
-      padding: 0.95rem 1.4rem;
-      font-weight: 600;
-      transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease, border-color 0.25s ease;
-      border: 1px solid transparent;
-    }
-
-    .button:hover,
-    .button-secondary:hover,
-    .button-ghost:hover {
-      transform: translateY(-1px);
-    }
-
-    .button {
-      background: var(--burgundy);
-      color: var(--white);
-      box-shadow: 0 14px 32px rgba(102, 2, 64, 0.2);
-    }
-
-    .button:hover { box-shadow: 0 18px 36px rgba(102, 2, 64, 0.25); }
-
-    .button-secondary {
-      background: var(--white);
-      color: var(--ink);
-      border-color: rgba(29, 27, 32, 0.1);
-    }
-
-    .button-secondary:hover {
-      border-color: rgba(102, 2, 64, 0.2);
-      box-shadow: var(--shadow);
-    }
-
-    .button-ghost {
-      padding: 0.8rem 1.1rem;
-      color: var(--burgundy);
-      background: rgba(102, 2, 64, 0.05);
-    }
-
-    .menu-button {
-      display: none;
-      align-items: center;
-      justify-content: center;
-      width: 46px;
-      height: 46px;
-      border-radius: 14px;
-      border: 1px solid rgba(29, 27, 32, 0.08);
-      background: rgba(255, 255, 255, 0.8);
-      color: var(--burgundy);
-      cursor: pointer;
-    }
-
-    .hero {
-      position: relative;
-      overflow: clip;
-      padding: 4.25rem 0 3.2rem;
-    }
-
-    .hero::before,
-    .hero::after {
-      content: "";
-      position: absolute;
-      border-radius: 50%;
-      filter: blur(10px);
-      pointer-events: none;
-    }
-
-    .hero::before {
-      width: 420px;
-      height: 420px;
-      right: -140px;
-      top: 40px;
-      background: radial-gradient(circle, rgba(102, 2, 64, 0.12) 0%, rgba(102, 2, 64, 0) 70%);
-    }
-
-    .hero::after {
-      width: 380px;
-      height: 380px;
-      left: -140px;
-      bottom: -120px;
-      background: radial-gradient(circle, rgba(51, 65, 57, 0.12) 0%, rgba(51, 65, 57, 0) 70%);
-    }
-
-    .hero-grid {
-      position: relative;
-      z-index: 1;
-      display: grid;
-      grid-template-columns: minmax(0, 1.1fr) minmax(320px, 0.9fr);
-      gap: 3rem;
-      align-items: center;
-    }
-
-    .hero-copy {
-      display: flex;
-      flex-direction: column;
-      gap: 1.5rem;
-    }
-
-    .hero-copy p {
-      max-width: 640px;
-    }
-
-    .hero-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.9rem;
-      margin-top: 0.3rem;
-    }
-
-    .hero-points {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 0.85rem;
-      margin-top: 0.6rem;
-    }
-
-    .hero-point {
-      padding: 1rem 1rem 1.05rem;
-      border: 1px solid rgba(29, 27, 32, 0.08);
-      border-radius: var(--radius-md);
-      background: rgba(255, 255, 255, 0.7);
-    }
-
-    .hero-point strong {
-      display: block;
-      font-size: 0.95rem;
-      color: var(--green);
-      margin-bottom: 0.25rem;
-    }
-
-    .hero-point span {
-      display: block;
-      color: var(--muted);
-      font-size: 0.92rem;
-      line-height: 1.45;
-    }
-
-    .portrait-card,
-    .panel,
-    .service-card,
-    .audience-card,
-    .step,
-    .outcome-card,
-    .group-card,
-    .cta-box {
-      border-radius: var(--radius-xl);
-      background: rgba(255, 255, 255, 0.88);
-      border: 1px solid rgba(29, 27, 32, 0.08);
-      box-shadow: var(--shadow);
-    }
-
-    .portrait-card {
-      padding: 1.15rem;
-    }
-
-    .portrait-card img {
-      width: 100%;
-      aspect-ratio: 0.9;
-      object-fit: cover;
-      border-radius: 22px;
-    }
-
-    .portrait-meta {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 0.85rem;
-      margin-top: 1rem;
-    }
-
-    .meta-chip {
-      background: var(--stone);
-      border-radius: 16px;
-      padding: 0.95rem 1rem;
-    }
-
-    .meta-chip strong {
-      display: block;
-      color: var(--burgundy);
-      font-size: 0.92rem;
-      margin-bottom: 0.2rem;
-    }
-
-    .meta-chip span {
-      font-size: 0.88rem;
-      color: var(--muted);
-      line-height: 1.45;
-    }
-
-    .section-head {
-      display: grid;
-      gap: 1rem;
-      margin-bottom: 2rem;
-      max-width: 720px;
-    }
-
-    .section-head.center {
-      text-align: center;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .audience-grid,
-    .outcomes-grid,
-    .steps-grid,
-    .services-grid,
-    .groups-grid {
-      display: grid;
-      gap: 1.2rem;
-    }
-
-    .audience-grid,
-    .outcomes-grid,
-    .steps-grid,
-    .groups-grid {
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-
-    .services-grid {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    .audience-card,
-    .outcome-card,
-    .step,
-    .service-card,
-    .group-card {
-      padding: 1.6rem;
-    }
-
-    .card-kicker {
-      display: inline-block;
-      font-size: 0.76rem;
-      font-weight: 700;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: var(--green);
-      margin-bottom: 0.8rem;
-    }
-
-    .card-title {
-      font-size: 1.3rem;
-      line-height: 1.1;
-      margin-bottom: 0.75rem;
-      color: var(--burgundy);
-      font-family: "Cormorant Garamond", Georgia, serif;
-      font-weight: 700;
-    }
-
-    .card-list {
-      display: grid;
-      gap: 0.5rem;
-      margin-top: 1rem;
-    }
-
-    .card-list span {
-      display: inline-flex;
-      align-items: flex-start;
-      gap: 0.55rem;
-      color: var(--muted);
-      font-size: 0.95rem;
-    }
-
-    .card-list span::before {
-      content: "•";
-      color: var(--gold);
-      font-weight: 700;
-      line-height: 1;
-      margin-top: 0.12rem;
-    }
-
-    .split-panel {
-      display: grid;
-      grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
-      gap: 1.3rem;
-      align-items: stretch;
-    }
-
-    .panel {
-      padding: 1.7rem;
-    }
-
-    .about-visual {
-      display: grid;
-      place-items: center;
-      min-height: 100%;
-      background:
-        linear-gradient(135deg, rgba(102, 2, 64, 0.08), rgba(51, 65, 57, 0.09)),
-        var(--white);
-    }
-
-    .about-visual img {
-      width: min(250px, 58%);
-      object-fit: contain;
-      filter: drop-shadow(0 14px 36px rgba(102, 2, 64, 0.15));
-    }
-
-    .about-copy {
-      display: grid;
-      gap: 1rem;
-      align-content: center;
-    }
-
-    .about-highlights {
-      display: grid;
-      gap: 0.8rem;
-      margin-top: 0.4rem;
-    }
-
-    .about-highlights div {
-      padding: 0.95rem 1rem;
-      border-radius: 16px;
-      background: var(--stone);
-      border: 1px solid rgba(29, 27, 32, 0.06);
-      color: var(--muted);
-    }
-
-    .about-highlights strong {
-      color: var(--green);
-    }
-
-    .service-card.featured {
-      background: linear-gradient(180deg, rgba(102, 2, 64, 0.06), rgba(255,255,255,0.95));
-      border-color: rgba(234, 179, 8, 0.38);
-    }
-
-    .service-tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.55rem;
-      margin-top: 1.1rem;
-    }
-
-    .service-tags span {
-      padding: 0.48rem 0.78rem;
-      border-radius: 999px;
-      background: rgba(51, 65, 57, 0.07);
-      color: var(--green);
-      font-size: 0.82rem;
-      font-weight: 600;
-    }
-
-    .group-card {
-      background: linear-gradient(180deg, rgba(255,255,255,0.98), rgba(245, 245, 244, 0.9));
-    }
-
-    .cta {
-      padding: 2rem 0 5.8rem;
-    }
-
-    .cta-box {
-      padding: 2.3rem;
-      background:
-        linear-gradient(130deg, rgba(102, 2, 64, 0.94), rgba(51, 65, 57, 0.96));
-      color: var(--white);
-      overflow: hidden;
-      position: relative;
-    }
-
-    .cta-box::before {
-      content: "";
-      position: absolute;
-      inset: auto -70px -70px auto;
-      width: 260px;
-      height: 260px;
-      border-radius: 50%;
-      background: radial-gradient(circle, rgba(234, 179, 8, 0.28) 0%, rgba(234, 179, 8, 0) 72%);
-      pointer-events: none;
-    }
-
-    .cta-grid {
-      position: relative;
-      z-index: 1;
-      display: grid;
-      grid-template-columns: minmax(0, 1fr) auto;
-      gap: 1.4rem;
-      align-items: center;
-    }
-
-    .cta-box h2,
-    .cta-box p {
-      color: var(--white);
-    }
-
-    .cta-box p {
-      max-width: 720px;
-      opacity: 0.9;
-      margin-top: 0.9rem;
-    }
-
-    .contact-section {
-      padding: 0 0 5.2rem;
-    }
-
-    .contact-wrap {
-      display: grid;
-      grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
-      gap: 1.2rem;
-    }
-
-    .contact-card,
-    .contact-form-card {
-      border-radius: var(--radius-xl);
-      background: rgba(255, 255, 255, 0.9);
-      border: 1px solid rgba(29, 27, 32, 0.08);
-      box-shadow: var(--shadow);
-      padding: 1.8rem;
-    }
-
-    .contact-card {
-      display: grid;
-      gap: 1rem;
-      align-content: start;
-    }
-
-    .contact-info {
-      display: grid;
-      gap: 0.85rem;
-      margin-top: 0.35rem;
-    }
-
-    .contact-info div {
-      padding: 0.95rem 1rem;
-      border-radius: 16px;
-      background: var(--stone);
-      border: 1px solid rgba(29, 27, 32, 0.06);
-    }
-
-    .contact-info strong {
-      display: block;
-      color: var(--burgundy);
-      margin-bottom: 0.18rem;
-      font-size: 0.92rem;
-    }
-
-    .contact-form {
-      display: grid;
-      gap: 0.95rem;
-    }
-
-    .contact-form label {
-      display: grid;
-      gap: 0.45rem;
-      color: var(--ink);
-      font-size: 0.94rem;
-      font-weight: 600;
-    }
-
-    .contact-form input,
-    .contact-form textarea {
-      width: 100%;
-      border: 1px solid rgba(29, 27, 32, 0.12);
-      border-radius: 16px;
-      padding: 0.95rem 1rem;
-      background: #fff;
-      color: var(--ink);
-      font: inherit;
-      transition: border-color 0.25s ease, box-shadow 0.25s ease;
-    }
-
-    .contact-form input:focus,
-    .contact-form textarea:focus {
-      outline: none;
-      border-color: rgba(102, 2, 64, 0.4);
-      box-shadow: 0 0 0 4px rgba(102, 2, 64, 0.08);
-    }
-
-    .contact-form textarea {
-      min-height: 170px;
-      resize: vertical;
-    }
-
-    .contact-note {
-      font-size: 0.88rem;
-      color: var(--muted);
-    }
-
-    footer {
-      padding: 1.6rem 0 2.6rem;
-      border-top: 1px solid rgba(29, 27, 32, 0.06);
-      background: rgba(255,255,255,0.4);
-    }
-
-    .footer-row {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 1rem;
-      color: var(--muted);
-      font-size: 0.92rem;
-    }
-
-    .footer-brand {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.8rem;
-      color: var(--burgundy);
-      font-weight: 700;
-    }
-
-    .footer-brand img {
-      width: 36px;
-      height: 36px;
-      object-fit: contain;
-    }
-
-    @media (max-width: 980px) {
-      .hero-grid,
-      .split-panel,
-      .cta-grid,
-      .contact-wrap {
-        grid-template-columns: 1fr;
-      }
-
-      .portrait-card {
-        max-width: 620px;
-        margin: 0 auto;
-      }
-
-      .services-grid,
-      .audience-grid,
-      .outcomes-grid,
-      .steps-grid,
-      .groups-grid,
-      .portrait-meta,
-      .hero-points {
-        grid-template-columns: 1fr 1fr;
-      }
-
-      .nav-links {
-        display: none;
-        position: absolute;
-        left: 1rem;
-        right: 1rem;
-        top: calc(100% + 0.7rem);
-        background: rgba(255, 255, 255, 0.96);
-        border: 1px solid rgba(29, 27, 32, 0.08);
-        box-shadow: var(--shadow);
-        border-radius: 20px;
-        padding: 1rem;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.9rem;
-      }
-
-      .nav-links.is-open { display: flex; }
-      .menu-button { display: inline-flex; }
-      .nav-cta { display: none; }
-      .nav { position: relative; }
-    }
-
-    @media (max-width: 680px) {
-      .section { padding: 4.5rem 0; }
-      .hero { padding-top: 3.2rem; }
-
-      .services-grid,
-      .audience-grid,
-      .outcomes-grid,
-      .steps-grid,
-      .groups-grid,
-      .portrait-meta,
-      .hero-points {
-        grid-template-columns: 1fr;
-      }
-
-      .cta-box,
-      .panel,
-      .audience-card,
-      .outcome-card,
-      .step,
-      .service-card,
-      .group-card,
-      .portrait-card {
-        border-radius: 22px;
-      }
-
-      .cta-box { padding: 1.8rem; }
-      .footer-row {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Living Bloom is a grounded, integrative practice in Brussels and online offering burnout prevention, depression support, energetic healing, coaching, and retreats.">
+    <meta name="keywords" content="coaching, healing, energetic healing, retreats, perimenopause, menopause, women's circle, shamanic drum journeys, alkhemylab, burnout prevention, depression support">
+    <title>Living Bloom | Navigate Your Inner Systems</title>
+   
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+   
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,600&display=swap" rel="stylesheet">
+
+    <!-- Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            sand: '#F7F5F0',     // Warm neutral background
+                            sage: '#8A9A5B',     // Grounded green
+                            burgundy: '#6B2D5C', // Alchemical deepening, headers
+                            gold: '#D4AF37',     // Solar gold, accents
+                            charcoal: '#2C3E50', // Text
+                            cream: '#FFFDD0'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['Lora', 'serif'],
+                        sans: ['Nunito Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #F7F5F0;
+            color: #2C3E50;
+            font-family: 'Nunito Sans', sans-serif;
+        }
+        h1, h2, h3, h4 { font-family: 'Lora', serif; color: #6B2D5C; }
+
+        .interactive-tab.active { border-bottom-color: #6B2D5C; color: #6B2D5C; font-weight: 600; }
+        .filter-btn.active { background-color: #6B2D5C; color: white; border-color: #6B2D5C; }
+       
+        .fade-in { animation: fadeIn 0.4s ease-in-out; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(5px); } to { opacity: 1; transform: translateY(0); } }
+    </style>
 </head>
-<body>
-  <div class="nav-shell">
-    <div class="container nav">
-      <a class="brand" href="#top" aria-label="Living Bloom home">
-        <img src="assets/Living Bloom Logo.png" alt="Living Bloom logo">
-        <span>
-          <span class="brand-name">Living Bloom</span>
-          <span class="brand-tag">Inner systems guidance</span>
-        </span>
-      </a>
+<body class="antialiased selection:bg-brand-gold selection:text-white">
 
-      <nav class="nav-links" id="site-menu" aria-label="Primary navigation">
-        <a href="#about">About</a>
-        <a href="#support">How I support you</a>
-        <a href="#services">Services</a>
-        <a href="#group-experiences">Group experiences</a>
-        <a href="#book">Book</a>
-      </nav>
-
-      <a class="button nav-cta" href="https://koalendar.com/u/IntegrActiveConnections" target="_blank" rel="noopener noreferrer">Book a session</a>
-      <button class="menu-button" id="menu-toggle" aria-expanded="false" aria-controls="site-menu" aria-label="Toggle menu">☰</button>
-    </div>
-  </div>
-
-  <main id="top">
-    <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <span class="eyebrow">Grounded support for inner transitions</span>
-          <h1>Navigate your inner systems.<br>Restore your vitality.</h1>
-          <p class="lead">Living Bloom is a grounded, integrative practice for people who feel stuck, overwhelmed, or exhausted. I help high-functioning individuals quiet mental noise, regulate their inner system, and return to a clearer, steadier, more vital way of being.</p>
-          <div class="hero-actions">
-            <a class="button" href="https://koalendar.com/u/IntegrActiveConnections" target="_blank" rel="noopener noreferrer">Book now</a>
-            <a class="button-secondary" href="#services">Explore services</a>
-          </div>
-          <div class="hero-points" aria-label="Key practice highlights">
-            <div class="hero-point">
-              <strong>Grounded depth</strong>
-              <span>Structured guidance with intuitive, restorative work.</span>
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-brand-sand/90 backdrop-blur-md border-b border-brand-sage/10">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center gap-3 cursor-pointer" onclick="window.scrollTo(0,0)">
+                    <img src="assets/Living Bloom logo.png" alt="Living Bloom - Energetic Healing, Alkhemylab and Coaching" class="h-12 w-auto object-contain drop-shadow-sm">
+                    <span class="font-serif text-xl font-semibold text-brand-burgundy tracking-tight hidden sm:block">Living Bloom</span>
+                </div>
+                <div class="hidden md:flex space-x-8 text-sm uppercase tracking-widest font-semibold">
+                    <a href="#guide" class="text-brand-charcoal hover:text-brand-burgundy transition-colors">The Bridge</a>
+                    <a href="#archetypes" class="text-brand-charcoal hover:text-brand-burgundy transition-colors">Archetypes</a>
+                    <a href="#pathways" class="text-brand-charcoal hover:text-brand-burgundy transition-colors">Pathways</a>
+                    <a href="#contact" class="text-brand-charcoal hover:text-brand-burgundy transition-colors">Contact</a>
+                </div>
+                <a href="https://koalendar.com/e/discovery-livingbloom" target="_blank" rel="noopener noreferrer" class="bg-brand-burgundy text-white px-6 py-2 rounded-full hover:bg-opacity-90 transition-all text-sm font-bold">
+                    Discovery Call
+                </a>
             </div>
-            <div class="hero-point">
-              <strong>Non-clinical space</strong>
-              <span>Support for burnout, transition, emotional overload, and inner reorganization.</span>
-            </div>
-            <div class="hero-point">
-              <strong>Brussels &amp; online</strong>
-              <span>Private sessions for clients in Brussels and across Europe.</span>
-            </div>
-          </div>
         </div>
+    </nav>
 
-        <div class="portrait-card">
-          <img src="assets/mara2.jpg" alt="Portrait of Mara, founder of Living Bloom" loading="eager">
-          <div class="portrait-meta">
-            <div class="meta-chip">
-              <strong>Outer systems → inner systems</strong>
-              <span>A bridge between structured expertise and healing work.</span>
+    <!-- Hero -->
+    <header class="relative pt-24 pb-32 text-center px-6 overflow-hidden">
+        <div class="absolute inset-0 z-0 opacity-5 bg-[radial-gradient(circle_at_center,_#8A9A5B_0%,_transparent_70%)]"></div>
+        <div class="relative z-10 max-w-4xl mx-auto">
+            <span class="text-brand-sage uppercase tracking-[0.3em] font-bold text-xs mb-6 block">Navigate Your Inner Systems</span>
+            <h1 class="text-5xl md:text-7xl font-serif mb-8 leading-tight">
+                Quiet the Noise.<br>
+                <span class="text-brand-gold italic">Restore Your Vitality.</span>
+            </h1>
+            <p class="text-lg md:text-xl text-brand-charcoal mb-10 max-w-2xl mx-auto font-light leading-relaxed">
+                Living Bloom is a grounded, integrative practice for people who feel stuck, overwhelmed, or exhausted. I help high-functioning individuals quiet mental noise, regulate their inner system, and return to a clearer, steadier, more vital way of being.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="https://koalendar.com/u/IntegrActiveConnections" target="_blank" rel="noopener noreferrer" class="bg-brand-burgundy text-white px-10 py-4 rounded-full hover:shadow-xl transition-all font-bold text-lg w-full sm:w-auto">
+                    Book a Session
+                </a>
+                <a href="#contact" class="bg-white border-2 border-brand-burgundy text-brand-burgundy px-10 py-4 rounded-full hover:bg-brand-sand transition-all font-bold text-lg w-full sm:w-auto">
+                    Get in Touch
+                </a>
             </div>
-            <div class="meta-chip">
-              <strong>Focused pathways</strong>
-              <span>Integrative sessions, energetic regulation, drum work, and deeper support.</span>
-            </div>
-          </div>
         </div>
-      </div>
+    </header>
+
+    <!-- About Section: The Bridge -->
+    <section id="guide" class="py-24 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex flex-col lg:flex-row gap-20 items-center">
+                <div class="lg:w-1/2 relative">
+                    <div class="w-full aspect-[4/5] bg-brand-burgundy rounded-[4rem] relative overflow-hidden shadow-2xl group">
+                        <!-- Headshot -->
+                        <img src="assets/mara2.jpg" alt="Mara - Facilitator of retreats, shamanic drum journeys, and holistic healing at Living Bloom" class="absolute inset-0 w-full h-full object-cover opacity-90 transition-transform duration-700 group-hover:scale-105" onerror="this.src='https://placehold.co/600x800/6B2D5C/FFF?text=Mara';">
+                        
+                        <!-- Gradient Overlay for Text Readability -->
+                        <div class="absolute inset-0 bg-gradient-to-t from-brand-charcoal/80 via-transparent to-transparent"></div>
+                        
+                        <div class="absolute bottom-12 left-10 right-10 text-white z-10">
+                            <p class="font-serif text-2xl italic leading-snug drop-shadow-md">"Systems cannot thrive if they are not resilient from the inside out."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2">
+                    <h2 class="text-4xl mb-8">From Global Systems to Inner Landscapes</h2>
+                    <div class="space-y-6 text-brand-charcoal leading-relaxed font-light">
+                        <p>For over 25 years, my world was defined by the complexity of global climate change. I navigated the high-pressure corridors of climate change policy-making, managing intricate systems and the weight of planetary transition.</p>
+                        <p>Through that work, I learned a fundamental truth: <strong>sweeping external changes mean nothing if the internal hardware is broken.</strong></p>
+                        <p>Today, I apply that same systemic integrity to the human experience. I help high-functioning individuals—the experts, the leaders, and the seekers—navigate their own "inner climate" to move from exhaustion back to vital flourishing.</p>
+                        <p class="font-semibold text-brand-burgundy italic text-lg border-l-4 border-brand-gold pl-4">Nature doesn’t rush its transitions; it blooms through them.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section class="section">
-      <div class="container">
-        <div class="section-head center">
-          <span class="eyebrow">When the inner system feels overloaded</span>
-          <h2>If this feels familiar, you are in the right place.</h2>
-          <p class="lead">The work of Living Bloom is designed for people who keep functioning on the outside while something inside feels noisy, depleted, stalled, or out of sync.</p>
-        </div>
+    <!-- Archetypes -->
+    <section id="archetypes" class="py-24 bg-brand-sand/50">
+        <div class="max-w-5xl mx-auto px-6 text-center">
+            <h2 class="text-4xl mb-12">Who I Walk With</h2>
+            <div class="flex justify-center border-b border-gray-200 mb-12">
+                <button class="interactive-tab active pb-4 px-8 text-lg font-serif border-b-2 border-transparent transition-all" data-target="tab-brussels">Analytical Professionals</button>
+                <button class="interactive-tab pb-4 px-8 text-lg font-serif border-b-2 border-transparent text-gray-400 transition-all" data-target="tab-midlife">Conscious Midlife</button>
+            </div>
+           
+            <div id="tab-brussels" class="tab-content fade-in text-left bg-white p-10 rounded-3xl border border-brand-sage/10 shadow-sm">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h3 class="text-2xl mb-4 italic text-brand-burgundy">The "Brussels" Archetype</h3>
+                        <p class="mb-6">For the EU experts, developers, and change-makers. You are analytical and skeptical of "woo," but your internal system is crashing.</p>
+                        <ul class="space-y-2 text-sm text-brand-charcoal">
+                            <li class="flex gap-2"><span>✦</span> <strong>Mental Noise:</strong> Decision fatigue and insomnia.</li>
+                            <li class="flex gap-2"><span>✦</span> <strong>Hollow Success:</strong> Thriving externally, stalled internally.</li>
+                        </ul>
+                    </div>
+                    <div class="bg-brand-sand/30 p-6 rounded-2xl border border-brand-gold/20">
+                        <p class="text-sm italic text-brand-charcoal">"We bypass the analytical mind to regulate the nervous system directly, restoring clarity without the need for endless talk."</p>
+                    </div>
+                </div>
+            </div>
 
-        <div class="audience-grid">
-          <article class="audience-card">
-            <span class="card-kicker">Mental noise</span>
-            <div class="card-title">You are carrying too much internal pressure.</div>
-            <p>Overthinking, insomnia, tension, emotional residue, or a constant sense of internal over-activity can make it difficult to hear yourself clearly.</p>
-          </article>
-          <article class="audience-card">
-            <span class="card-kicker">Lost spark</span>
-            <div class="card-title">Success outside does not always mean steadiness inside.</div>
-            <p>You may be capable, intelligent, and highly functional, yet still feel disconnected from vitality, meaning, rhythm, or your own inner baseline.</p>
-          </article>
-          <article class="audience-card">
-            <span class="card-kicker">Transition friction</span>
-            <div class="card-title">Something in your life is reorganizing.</div>
-            <p>Burnout, grief, identity shifts, menopause, relational changes, or other thresholds can call for support that is both grounded and deeply restorative.</p>
-          </article>
+            <div id="tab-midlife" class="tab-content hidden fade-in text-left bg-white p-10 rounded-3xl border border-brand-sage/10 shadow-sm">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h3 class="text-2xl mb-4 italic text-brand-burgundy">The Midlife Transition</h3>
+                        <p class="mb-6">For women navigating perimenopause and menopause. This is a deep inner reorganization, not just a medical event.</p>
+                        <ul class="space-y-2 text-sm text-brand-charcoal">
+                            <li class="flex gap-2"><span>✦</span> <strong>Identity Shift:</strong> Feeling out of sync with your past self.</li>
+                            <li class="flex gap-2"><span>✦</span> <strong>Recalibration:</strong> Building a new structure for your next season.</li>
+                        </ul>
+                    </div>
+                    <div class="bg-brand-sand/30 p-6 rounded-2xl border border-brand-gold/20">
+                        <p class="text-sm italic text-brand-charcoal">"Using sophisticated floral systems and energetic regulation to treat this transition as a sacred opportunity to bloom."</p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
-    <section class="section" id="about">
-      <div class="container">
-        <div class="split-panel">
-          <div class="panel about-visual">
-            <img src="assets/Living Bloom Logo.png" alt="Living Bloom compass flower logo" loading="lazy">
-          </div>
-          <div class="panel about-copy">
-            <span class="eyebrow">About Living Bloom</span>
-            <h2>Grounded integrity, restorative depth.</h2>
-            <p class="lead">Living Bloom was shaped around a clear bridge: from outer systems to inner systems. The work brings together professional depth, energetic sensitivity, and a structured approach to transformation.</p>
-            <p>I offer a steady, non-clinical space for people who want more than quick symptom relief. The intention is to support regulation, clarity, resilience, and a deeper return to self—so change can be felt not only as insight, but as lived experience.</p>
-            <div class="about-highlights">
-              <div><strong>Grounded language.</strong> The approach is calm, professional, and accessible, especially for people who are skeptical of overly spiritual framing.</div>
-              <div><strong>Systemic perspective.</strong> Sessions are designed to work with the whole person: mind, body, energy, emotional patterning, and current life context.</div>
-              <div><strong>Vitality as direction.</strong> The aim is not to push harder, but to help you reconnect with the steadier source of clarity and life-force underneath the noise.</div>
+    <!-- Services -->
+    <section id="pathways" class="py-24 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl mb-4">Pathways to Vitality</h2>
+                <div class="flex flex-wrap justify-center gap-3 mt-8">
+                    <button class="filter-btn active px-6 py-2 rounded-full border border-gray-300 text-xs font-bold uppercase tracking-widest transition-all" data-filter="all">All</button>
+                    <button class="filter-btn px-6 py-2 rounded-full border border-gray-300 text-xs font-bold uppercase tracking-widest transition-all" data-filter="relief">Immediate Relief</button>
+                    <button class="filter-btn px-6 py-2 rounded-full border border-gray-300 text-xs font-bold uppercase tracking-widest transition-all" data-filter="insight">Symbolic Insight</button>
+                    <button class="filter-btn px-6 py-2 rounded-full border border-gray-300 text-xs font-bold uppercase tracking-widest transition-all" data-filter="transformation">Deep Transformation</button>
+                    <button class="filter-btn px-6 py-2 rounded-full border border-gray-300 text-xs font-bold uppercase tracking-widest transition-all" data-filter="groups">Groups & Journeys</button>
+                </div>
             </div>
-          </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="services-grid">
+                
+                <!-- Signature Session -->
+                <div class="service-card all transformation bg-brand-burgundy text-white p-8 rounded-3xl shadow-xl relative overflow-hidden flex flex-col justify-between">
+                    <div>
+                        <div class="absolute top-0 right-0 bg-brand-gold text-brand-charcoal text-[10px] font-bold px-4 py-1 uppercase tracking-widest rounded-bl-xl">Signature</div>
+                        <h3 class="text-2xl mb-2 text-white font-serif">The Living Bloom Session</h3>
+                        <p class="text-brand-gold text-xs font-bold mb-4 uppercase tracking-wider">The Integrated Reset</p>
+                        <p class="text-white/90 text-sm leading-relaxed mb-6 font-light">
+                            An integrative one-to-one session combining symbolic insight, energetic regulation, and restorative healing. Designed for life transitions, burnout, inner reorganization, and emotional overload. Restore clarity, groundedness, and come home to yourself.
+                        </p>
+                    </div>
+                    <a href="https://koalendar.com/u/IntegrActiveConnections" target="_blank" class="text-brand-gold text-sm font-bold hover:text-white transition-colors uppercase tracking-widest flex items-center gap-2">Book Session <span>→</span></a>
+                </div>
+
+                <!-- Astro-Insight (NEW) -->
+                <div class="service-card all insight bg-brand-sand/30 p-8 rounded-3xl border border-brand-sage/20 hover:border-brand-sage transition-all flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-2xl mb-2 font-serif">Astro-Insight</h3>
+                        <p class="text-brand-sage text-xs font-bold mb-4 uppercase tracking-wider">Self-Awareness</p>
+                        <p class="text-brand-charcoal text-sm leading-relaxed mb-6">
+                            A reflective exploration using astrology as a tool for systemic understanding rather than fixed prediction. Indicated for individuals seeking perspective on career shifts, personal mission, and recurring life themes.
+                        </p>
+                    </div>
+                    <a href="https://koalendar.com/e/astro-intro" target="_blank" class="text-brand-burgundy text-sm font-bold hover:text-brand-sage transition-colors uppercase tracking-widest flex items-center gap-2">Book Session <span>→</span></a>
+                </div>
+
+                <!-- Energy Healing -->
+                <div class="service-card all relief bg-brand-sand/30 p-8 rounded-3xl border border-brand-sage/20 hover:border-brand-sage transition-all flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-2xl mb-2 font-serif">Energy Healing (Reiki)</h3>
+                        <p class="text-brand-sage text-xs font-bold mb-4 uppercase tracking-wider">Energetic Rebalancing</p>
+                        <p class="text-brand-charcoal text-sm leading-relaxed mb-6">
+                            A restorative session for nervous system regulation, energetic rebalancing, and support when you feel exhausted, off-centre, or depleted.
+                        </p>
+                    </div>
+                    <a href="https://koalendar.com/e/reiki-mara" target="_blank" class="text-brand-burgundy text-sm font-bold hover:text-brand-sage transition-colors uppercase tracking-widest flex items-center gap-2">Book Session <span>→</span></a>
+                </div>
+
+                <!-- Access Bars -->
+                <div class="service-card all relief bg-brand-sand/30 p-8 rounded-3xl border border-brand-sage/20 hover:border-brand-sage transition-all flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-2xl mb-2 font-serif">Access Bars®</h3>
+                        <p class="text-brand-sage text-xs font-bold mb-4 uppercase tracking-wider">Mental Decompression</p>
+                        <p class="text-brand-charcoal text-sm leading-relaxed mb-6">
+                            A gentle session focused on mental decompression and creating space when the mind feels crowded, tired, or overactive. Release the internal pressure valve.
+                        </p>
+                    </div>
+                    <a href="https://koalendar.com/e/access-bars" target="_blank" class="text-brand-burgundy text-sm font-bold hover:text-brand-sage transition-colors uppercase tracking-widest flex items-center gap-2">Book Session <span>→</span></a>
+                </div>
+
+                <!-- Joel Aleixo -->
+                <div class="service-card all transformation bg-brand-sand/30 p-8 rounded-3xl border border-brand-sage/20 hover:border-brand-sage transition-all flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-2xl mb-2 font-serif">Joel Aleixo System</h3>
+                        <p class="text-brand-sage text-xs font-bold mb-4 uppercase tracking-wider">Integral Vitality</p>
+                        <p class="text-brand-charcoal text-sm leading-relaxed mb-6">
+                            A sophisticated therapeutic system utilizing the vibrational qualities of Brazilian flora. Rather than just treating symptoms, it addresses the whole person—clearing "energetic memory" and balancing deep internal patterns. As our most potent tool for self-transformation, it gently restores your vital fire and provides the structural integrity needed for lasting, profound growth.
+                        </p>
+                    </div>
+                    <a href="https://koalendar.com/e/alkhemy-flower-therapy" target="_blank" class="text-brand-burgundy text-sm font-bold hover:text-brand-sage transition-colors uppercase tracking-widest flex items-center gap-2">Book Session <span>→</span></a>
+                </div>
+
+                <!-- Drum Healing -->
+                <div class="service-card all relief groups bg-brand-sand/30 p-8 rounded-3xl border border-brand-sage/20 hover:border-brand-sage transition-all flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-2xl mb-2 font-serif">Drum Healing</h3>
+                        <p class="text-brand-sage text-xs font-bold mb-4 uppercase tracking-wider">Rhythmic Regulation</p>
+                        <p class="text-brand-charcoal text-sm leading-relaxed mb-6">
+                            Somatic, non-verbal immersion to stabilize attention networks and reconnect you with your foundational inner vital pulse. Available 1:1 or in groups.
+                        </p>
+                    </div>
+                    <a href="https://koalendar.com/e/drum-healing" target="_blank" class="text-brand-burgundy text-sm font-bold hover:text-brand-sage transition-colors uppercase tracking-widest flex items-center gap-2">Book Session <span>→</span></a>
+                </div>
+
+                <!-- Welcoming the Age of Wisdom (NEW GROUP) -->
+                <div class="service-card all groups bg-brand-charcoal text-white p-8 rounded-3xl border border-brand-charcoal hover:shadow-xl transition-all flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-2xl mb-2 font-serif text-brand-sand">Welcoming the Age of Wisdom</h3>
+                        <p class="text-brand-gold text-xs font-bold mb-4 uppercase tracking-wider">Women's Circle</p>
+                        <p class="text-brand-sand/80 text-sm leading-relaxed mb-6 font-light">
+                            My signature circle for women navigating peri- and post-menopause. I understand the lived experience. A supportive space to connect, shift, and rediscover your identity.
+                        </p>
+                    </div>
+                    <a href="#contact" class="text-brand-gold text-sm font-bold hover:text-white transition-colors uppercase tracking-widest flex items-center gap-2">Inquire Now <span>→</span></a>
+                </div>
+
+                <!-- Rhythmic Immersion (NEW GROUP) -->
+                <div class="service-card all groups bg-brand-charcoal text-white p-8 rounded-3xl border border-brand-charcoal hover:shadow-xl transition-all flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-2xl mb-2 font-serif text-brand-sand">Rhythmic Immersion</h3>
+                        <p class="text-brand-gold text-xs font-bold mb-4 uppercase tracking-wider">Drum Meditations</p>
+                        <p class="text-brand-sand/80 text-sm leading-relaxed mb-6 font-light">
+                            Group experiences centred on rhythm, breath, and somatic integration to support grounding, emotional release, and nervous system regulation.
+                        </p>
+                    </div>
+                    <a href="#contact" class="text-brand-gold text-sm font-bold hover:text-white transition-colors uppercase tracking-widest flex items-center gap-2">Inquire Now <span>→</span></a>
+                </div>
+
+                <!-- Heart-Opening Work (NEW GROUP) -->
+                <div class="service-card all groups bg-brand-charcoal text-white p-8 rounded-3xl border border-brand-charcoal hover:shadow-xl transition-all flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-2xl mb-2 font-serif text-brand-sand">Heart-Opening Work</h3>
+                        <p class="text-brand-gold text-xs font-bold mb-4 uppercase tracking-wider">Cacao Journeys</p>
+                        <p class="text-brand-sand/80 text-sm leading-relaxed mb-6 font-light">
+                            Guided experiences that combine cacao, inner work, movement, and regulated presence to support connection and emotional openness.
+                        </p>
+                    </div>
+                    <a href="#contact" class="text-brand-gold text-sm font-bold hover:text-white transition-colors uppercase tracking-widest flex items-center gap-2">Inquire Now <span>→</span></a>
+                </div>
+
+                <!-- Transformational Journeys (NEW GROUP) -->
+                <div class="service-card all groups bg-brand-burgundy text-white p-8 rounded-3xl shadow-xl relative overflow-hidden flex flex-col justify-between lg:col-span-2 xl:col-span-1">
+                    <div>
+                        <div class="absolute top-0 right-0 bg-brand-gold text-brand-charcoal text-[10px] font-bold px-4 py-1 uppercase tracking-widest rounded-bl-xl">The Experience</div>
+                        <h3 class="text-2xl mb-2 font-serif text-brand-sand">Transformational Journeys</h3>
+                        <p class="text-brand-gold text-xs font-bold mb-4 uppercase tracking-wider">Immersive Adventures</p>
+                        <p class="text-brand-white/90 text-sm leading-relaxed mb-6 font-light">
+                            Deeply restorative 3–6 day immersive "Adventures" designed for profound reconnection with your inner landscape, nature, and your vital power.
+                        </p>
+                    </div>
+                    <a href="#contact" class="text-brand-gold text-sm font-bold hover:text-white transition-colors uppercase tracking-widest flex items-center gap-2">Inquire Now <span>→</span></a>
+                </div>
+
+            </div>
         </div>
-      </div>
     </section>
 
-    <section class="section" id="support">
-      <div class="container">
-        <div class="section-head center">
-          <span class="eyebrow">What this work supports</span>
-          <h2>Clarity. Regulation. Vitality.</h2>
-          <p class="lead">The practice is built to support people through complex inner phases with a balance of structure, intuition, and restorative depth.</p>
+    <!-- Contact / Footer -->
+    <footer id="contact" class="bg-brand-charcoal pt-24 pb-12 text-white px-6">
+        <div class="max-w-6xl mx-auto">
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 mb-20">
+                <!-- Contact Info -->
+                <div>
+                    <h2 class="text-4xl md:text-5xl font-serif mb-6 text-brand-sand">Get in Touch</h2>
+                    <p class="text-brand-sand/80 mb-10 text-lg font-light leading-relaxed">
+                        For questions, private sessions, collaborations, or group experiences, send a message here. Every transition is a sacred opportunity. Let’s determine which pathway supports your current inner climate.
+                    </p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <span class="text-brand-gold text-xl">📍</span>
+                            <div>
+                                <h4 class="font-sans text-brand-gold uppercase tracking-widest text-xs font-bold mb-1">Address</h4>
+                                <p class="text-brand-sand/90 font-light">Rue de la Madeleine 51<br>1000 Brussels - Belgium</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-4">
+                            <span class="text-brand-gold text-xl">🗓️</span>
+                            <div>
+                                <h4 class="font-sans text-brand-gold uppercase tracking-widest text-xs font-bold mb-1">Availability</h4>
+                                <p class="text-brand-sand/90 font-light">In-person sessions in Brussels<br>Online sessions available globally.</p>
+                                <p class="text-brand-sage font-medium text-sm mt-3 italic">Working with clients across Europe, Brazil, and worldwide.</p>
+                                <p class="text-brand-sage font-medium text-sm mt-1 italic">Languages: English, Portuguese, and Spanish.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form (Uses FormSubmit to send email to you seamlessly) -->
+                <div class="bg-white/5 p-8 rounded-3xl border border-white/10">
+                    <form action="https://formsubmit.co/integractiveconnections@gmail.com" method="POST" target="_blank" class="space-y-6">
+                        <!-- Disables captcha if preferred, but keep it on for spam protection by default. 
+                             Hidden subjects and auto-response options can be configured via FormSubmit documentation. -->
+                        <input type="hidden" name="_subject" value="New inquiry from Living Bloom Website">
+                        
+                        <div>
+                            <label for="name" class="block text-xs uppercase tracking-widest text-brand-sand/60 mb-2">Name</label>
+                            <input type="text" id="name" name="name" required class="w-full bg-transparent border-b border-white/20 text-white pb-2 focus:outline-none focus:border-brand-gold transition-colors">
+                        </div>
+                        
+                        <div>
+                            <label for="email" class="block text-xs uppercase tracking-widest text-brand-sand/60 mb-2">Email Address</label>
+                            <input type="email" id="email" name="email" required class="w-full bg-transparent border-b border-white/20 text-white pb-2 focus:outline-none focus:border-brand-gold transition-colors">
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block text-xs uppercase tracking-widest text-brand-sand/60 mb-2">Message</label>
+                            <textarea id="message" name="message" rows="4" required class="w-full bg-transparent border-b border-white/20 text-white pb-2 focus:outline-none focus:border-brand-gold transition-colors resize-none"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-brand-gold text-brand-charcoal py-4 rounded-full font-bold uppercase tracking-widest text-sm hover:bg-white transition-all">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+                <p class="text-brand-sand/40 text-xs tracking-widest uppercase mb-4 md:mb-0">Living Bloom © 2026 | Inner Systems Specialist</p>
+                <div class="flex gap-6 items-center">
+                    <a href="https://www.instagram.com/reginadgaia" target="_blank" rel="noopener noreferrer" class="text-brand-sand/60 hover:text-brand-gold transition-colors text-sm uppercase tracking-widest">Instagram</a>
+                    <img src="assets/Living Bloom logo.png" alt="Living Bloom Logo" class="h-6 w-auto opacity-50 grayscale">
+                </div>
+            </div>
         </div>
+    </footer>
 
-        <div class="outcomes-grid">
-          <article class="outcome-card">
-            <span class="card-kicker">Clarity</span>
-            <div class="card-title">Less internal noise, more discernment.</div>
-            <p>Sessions help create space for insight, self-awareness, and a steadier sense of direction.</p>
-          </article>
-          <article class="outcome-card">
-            <span class="card-kicker">Regulation</span>
-            <div class="card-title">A more settled internal baseline.</div>
-            <p>The work supports nervous system regulation, decompression, and the release of accumulated internal pressure.</p>
-          </article>
-          <article class="outcome-card">
-            <span class="card-kicker">Vitality</span>
-            <div class="card-title">A return to your own rhythm.</div>
-            <p>The intention is to help you reconnect with your natural life-force, groundedness, and capacity for meaningful change.</p>
-          </article>
-        </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Tab logic
+            document.querySelectorAll('.interactive-tab').forEach(tab => {
+                tab.addEventListener('click', () => {
+                    document.querySelectorAll('.interactive-tab').forEach(t => { t.classList.remove('active'); t.classList.add('text-gray-400'); });
+                    document.querySelectorAll('.tab-content').forEach(c => c.classList.add('hidden'));
+                    tab.classList.add('active'); tab.classList.remove('text-gray-400');
+                    document.getElementById(tab.dataset.target).classList.remove('hidden');
+                });
+            });
 
-        <div class="section-head" style="margin-top: 3rem; margin-bottom: 1.4rem;">
-          <h3>How we work</h3>
-          <p>The process is designed to feel clear and supportive, while still allowing depth.</p>
-        </div>
-
-        <div class="steps-grid">
-          <article class="step">
-            <span class="card-kicker">01</span>
-            <div class="card-title">Map the current inner climate</div>
-            <p>We begin by identifying what is most present now: overload, depletion, emotional residue, transition, or lack of clarity.</p>
-          </article>
-          <article class="step">
-            <span class="card-kicker">02</span>
-            <div class="card-title">Choose the right pathway</div>
-            <p>Depending on your needs, the work may focus on integrative healing, mental decompression, rhythmic regulation, or deeper support over time.</p>
-          </article>
-          <article class="step">
-            <span class="card-kicker">03</span>
-            <div class="card-title">Support integration</div>
-            <p>The goal is not only a meaningful session, but a shift that can be integrated into daily life with more steadiness and coherence.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="services">
-      <div class="container">
-        <div class="section-head center">
-          <span class="eyebrow">Services</span>
-          <h2>Ways to work together</h2>
-          <p class="lead">A curated service structure that moves from immediate relief and regulation to deeper, longer-term transformation.</p>
-        </div>
-
-        <div class="services-grid">
-          <article class="service-card featured">
-            <span class="card-kicker">Signature session</span>
-            <div class="card-title">The Living Bloom Session</div>
-            <p>An integrative one-to-one session combining symbolic insight, energetic regulation, and restorative healing to support a deeper reset.</p>
-            <div class="card-list">
-              <span>For life transitions, burnout, inner reorganization, and emotional overload.</span>
-              <span>Designed to restore clarity, groundedness, and a sense of coming home to yourself.</span>
-            </div>
-            <div class="service-tags">
-              <span>Integrative 1:1</span>
-              <span>Signature pathway</span>
-            </div>
-          </article>
-
-          <article class="service-card">
-            <span class="card-kicker">Lead-in modality</span>
-            <div class="card-title">Access Bars</div>
-            <p>A gentle session focused on mental decompression and creating space when the mind feels crowded, tired, or overactive.</p>
-            <div class="service-tags">
-              <span>Mental decompression</span>
-              <span>Stress relief</span>
-            </div>
-          </article>
-
-          <article class="service-card">
-            <span class="card-kicker">Lead-in modality</span>
-            <div class="card-title">Energy Healing</div>
-            <p>A restorative session for nervous system regulation, energetic rebalancing, and support when you feel exhausted, off-centre, or depleted.</p>
-            <div class="service-tags">
-              <span>Restoration</span>
-              <span>Regulation</span>
-            </div>
-          </article>
-
-          <article class="service-card">
-            <span class="card-kicker">Lead-in modality</span>
-            <div class="card-title">Rhythmic Regulation</div>
-            <p>Drum-based healing work for people who feel stuck in the head and need a grounded, somatic way to release tension and reconnect with vitality.</p>
-            <div class="service-tags">
-              <span>Drum healing</span>
-              <span>Somatic support</span>
-            </div>
-          </article>
-
-          <article class="service-card">
-            <span class="card-kicker">Specialised pathway</span>
-            <div class="card-title">Burnout Reset</div>
-            <p>A structured path designed to support the move from collapse and depletion toward clearer energy, steadier function, and renewed inner fire.</p>
-            <div class="service-tags">
-              <span>Burnout support</span>
-              <span>Deeper process</span>
-            </div>
-          </article>
-
-          <article class="service-card">
-            <span class="card-kicker">Specialised pathway</span>
-            <div class="card-title">Conscious Midlife</div>
-            <p>Support for women moving through menopause and other identity shifts with a grounded approach to emotional balance, resilience, and reorientation.</p>
-            <div class="service-tags">
-              <span>Midlife transition</span>
-              <span>Women's support</span>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="group-experiences">
-      <div class="container">
-        <div class="section-head center">
-          <span class="eyebrow">Group experiences</span>
-          <h2>Immersive spaces for collective regulation and reconnection</h2>
-          <p class="lead">Living Bloom also includes group formats for people who want to experience this work in ritual, community, and nature-based settings.</p>
-        </div>
-
-        <div class="groups-grid">
-          <article class="group-card">
-            <span class="card-kicker">Rhythmic immersion</span>
-            <div class="card-title">Drum meditations</div>
-            <p>Group experiences centred on rhythm, breath, and somatic integration to support grounding, emotional release, and nervous system regulation.</p>
-          </article>
-          <article class="group-card">
-            <span class="card-kicker">Heart-opening work</span>
-            <div class="card-title">Cacao journeys</div>
-            <p>Guided experiences that combine cacao, inner work, movement, and regulated presence to support connection and emotional openness.</p>
-          </article>
-          <article class="group-card">
-            <span class="card-kicker">Deep reconnection</span>
-            <div class="card-title">Seasonal rituals &amp; retreats</div>
-            <p>Immersive gatherings designed to align personal change with organic cycles and support deeper transformation in a held container.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="cta" id="book">
-      <div class="container">
-        <div class="cta-box">
-          <div class="cta-grid">
-            <div>
-              <span class="eyebrow" style="background: rgba(255,255,255,0.12); border-color: rgba(255,255,255,0.22); color: #fff;">Book</span>
-              <h2>Ready to find your rhythm?</h2>
-              <p>Book your session or discovery conversation through the Living Bloom calendar and choose the pathway that best supports your current inner climate.</p>
-            </div>
-            <div>
-              <a class="button-secondary" href="https://koalendar.com/u/IntegrActiveConnections" target="_blank" rel="noopener noreferrer">Go to booking page</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <section class="contact-section" id="contact">
-    <div class="container">
-      <div class="contact-wrap">
-        <div class="contact-card">
-          <span class="eyebrow">Contact</span>
-          <h2>Get in touch</h2>
-          <p class="lead">For questions, private sessions, collaborations, or group experiences, send a message here.</p>
-          <div class="contact-info">
-            <div>
-              <strong>Address</strong>
-              <span>Rue de la Madeleine 51, 1000 Brussels - Belgium</span>
-            </div>
-            <div>
-              <strong>Availability</strong>
-              <span>Private sessions in Brussels and online across Europe.</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="contact-form-card">
-          <form class="contact-form" id="contact-form">
-            <label>
-              Name
-              <input type="text" id="contact-name" name="name" required>
-            </label>
-            <label>
-              Email
-              <input type="email" id="contact-email" name="email" required>
-            </label>
-            <label>
-              Message
-              <textarea id="contact-message" name="message" required></textarea>
-            </label>
-            <div>
-              <button class="button" type="submit">Send message</button>
-            </div>
-            <p class="contact-note">Submitting the form opens an email draft so you can send your message directly.</p>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <div class="container footer-row">
-      <div class="footer-brand">
-        <img src="assets/Living Bloom Logo.png" alt="Living Bloom logo" loading="lazy">
-        <span>Living Bloom</span>
-      </div>
-      <div>Rue de la Madeleine 51, 1000 Brussels - Belgium</div>
-      <div>Navigate your inner systems. Restore your vitality.</div>
-    </div>
-  </footer>
-
-  <script>
-    const menuToggle = document.getElementById('menu-toggle');
-    const siteMenu = document.getElementById('site-menu');
-
-    if (menuToggle && siteMenu) {
-      menuToggle.addEventListener('click', () => {
-        const isOpen = siteMenu.classList.toggle('is-open');
-        menuToggle.setAttribute('aria-expanded', String(isOpen));
-        menuToggle.textContent = isOpen ? '✕' : '☰';
-      });
-
-      siteMenu.querySelectorAll('a').forEach(link => {
-        link.addEventListener('click', () => {
-          siteMenu.classList.remove('is-open');
-          menuToggle.setAttribute('aria-expanded', 'false');
-          menuToggle.textContent = '☰';
+            // Filter logic
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    const f = btn.dataset.filter;
+                    document.querySelectorAll('.service-card').forEach(c => {
+                        c.style.display = (f === 'all' || c.classList.contains(f)) ? 'flex' : 'none';
+                    });
+                });
+            });
         });
-      });
-    }
-
-    const contactForm = document.getElementById('contact-form');
-
-    if (contactForm) {
-      const recipient = 'integractiveconnections@gmail.com';
-
-      contactForm.addEventListener('submit', (event) => {
-        event.preventDefault();
-
-        const name = document.getElementById('contact-name').value.trim();
-        const email = document.getElementById('contact-email').value.trim();
-        const message = document.getElementById('contact-message').value.trim();
-
-        const subject = `Living Bloom enquiry from ${name}`;
-        const body = `Name: ${name}
-Email: ${email}
-
-Message:
-${message}`;
-
-        window.location.href = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-      });
-    }
-  </script>
+    </script>
 </body>
 </html>
