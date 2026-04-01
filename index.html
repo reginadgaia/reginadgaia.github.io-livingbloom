@@ -61,7 +61,7 @@
         <div class="max-w-6xl mx-auto px-6">
             <div class="flex justify-between items-center h-20">
                 <div class="flex items-center gap-3 cursor-pointer" onclick="window.scrollTo(0,0)">
-                    <img src="assets/Living Bloom logo.png" alt="Living Bloom - Energetic Healing, Alkhemylab and Coaching" class="h-12 w-auto object-contain drop-shadow-sm">
+                    <img src="assets/Living Bloom Logo.png" alt="Living Bloom - Energetic Healing, Alkhemylab and Coaching" class="h-12 w-auto object-contain drop-shadow-sm">
                     <span class="font-serif text-xl font-semibold text-brand-burgundy tracking-tight hidden sm:block">Living Bloom</span>
                 </div>
                 <div class="hidden md:flex space-x-8 text-sm uppercase tracking-widest font-semibold">
@@ -350,10 +350,12 @@
 
                 <!-- Contact Form (Uses FormSubmit to send email to you seamlessly) -->
                 <div class="bg-white/5 p-8 rounded-3xl border border-white/10">
-                    <form action="https://formsubmit.co/integractiveconnections@gmail.com" method="POST" target="_blank" class="space-y-6">
-                        <!-- Disables captcha if preferred, but keep it on for spam protection by default. 
-                             Hidden subjects and auto-response options can be configured via FormSubmit documentation. -->
-                        <input type="hidden" name="_subject" value="New inquiry from Living Bloom Website">
+                    <form action="https://api.web3forms.com/submit" method="POST" class="space-y-6">
+                        <!-- Replace YOUR_ACCESS_KEY_HERE with your real Web3Forms access key -->
+                        <input type="hidden" name="access_key" value="3571b863-a7db-4933-955d-463e07e09f7f">
+                        <input type="hidden" name="subject" value="New inquiry from Living Bloom Website">
+                        <input type="hidden" name="redirect" value="https://livingbloom.life/?message=success#contact">
+                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
                         
                         <div>
                             <label for="name" class="block text-xs uppercase tracking-widest text-brand-sand/60 mb-2">Name</label>
@@ -382,7 +384,7 @@
                 <p class="text-brand-sand/40 text-xs tracking-widest uppercase mb-4 md:mb-0">Living Bloom © 2026 | Inner Systems Specialist</p>
                 <div class="flex gap-6 items-center">
                     <a href="https://www.instagram.com/reginadgaia" target="_blank" rel="noopener noreferrer" class="text-brand-sand/60 hover:text-brand-gold transition-colors text-sm uppercase tracking-widest">Instagram</a>
-                    <img src="assets/Living Bloom logo.png" alt="Living Bloom Logo" class="h-6 w-auto opacity-50 grayscale">
+                    <img src="assets/Living Bloom Logo.png" alt="Living Bloom Logo" class="h-6 w-auto opacity-50 grayscale">
                 </div>
             </div>
         </div>
