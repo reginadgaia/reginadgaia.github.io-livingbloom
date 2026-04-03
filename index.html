@@ -55,7 +55,7 @@
 <body class="antialiased selection:bg-brand-gold selection:text-white">    
     
     <!-- Navigation -->    
-    <nav class="sticky top-0 z-50 bg-brand-sand/90 backdrop-blur-md border-b border-brand-sage/10">        
+    <nav class="sticky top-0 z-50 bg-brand-sand/90 backdrop-blur-md border-b border-brand-sage/10 relative">        
         <div class="max-w-6xl mx-auto px-6">            
             <div class="flex justify-between items-center h-20">                
                 <div class="flex items-center gap-3 cursor-pointer" onclick="window.scrollTo(0,0)">                    
@@ -63,16 +63,34 @@
                     <span class="font-serif text-xl font-semibold text-brand-burgundy tracking-tight hidden sm:block">Living Bloom</span>                
                 </div>                
                 <div class="hidden md:flex space-x-8 text-sm uppercase tracking-widest font-semibold">                    
-                    <a href="#guide" class="text-brand-charcoal hover:text-brand-burgundy transition-colors">The Bridge</a>                    
-                    <a href="#philosophy" class="text-brand-charcoal hover:text-brand-burgundy transition-colors">Philosophy</a>                    
+                    <a href="#guide" class="text-brand-charcoal hover:text-brand-burgundy transition-colors">About</a>                    
+                    <a href="#philosophy" class="text-brand-charcoal hover:text-brand-burgundy transition-colors">My Approach</a>                    
                     <a href="#pathways" class="text-brand-charcoal hover:text-brand-burgundy transition-colors">Pathways</a>                    
                     <a href="#contact" class="text-brand-charcoal hover:text-brand-burgundy transition-colors">Contact</a>                
                 </div>                
-                <a href="https://koalendar.com/e/discovery-livingbloom" target="_blank" rel="noopener noreferrer" class="bg-brand-burgundy text-white px-6 py-2 rounded-full hover:bg-opacity-90 transition-all text-sm font-bold">                    
-                    Discovery Call                
-                </a>            
+                <div class="flex items-center gap-2 sm:gap-4">
+                    <a href="https://koalendar.com/e/discovery-livingbloom" target="_blank" rel="noopener noreferrer" class="bg-brand-burgundy text-white px-4 sm:px-6 py-2 rounded-full hover:bg-opacity-90 transition-all text-xs sm:text-sm font-bold">                    
+                        Discovery Call                
+                    </a>
+                    <!-- Mobile Menu Button -->
+                    <button id="mobile-menu-btn" class="md:hidden text-brand-burgundy p-1 focus:outline-none" aria-label="Menu">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
             </div>        
         </div>    
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-brand-sand/95 backdrop-blur-md border-b border-brand-sage/10 shadow-lg md:hidden">
+            <div class="flex flex-col px-6 py-6 space-y-6 text-sm uppercase tracking-widest font-semibold text-center">
+                <a href="#guide" class="mobile-link text-brand-charcoal hover:text-brand-burgundy transition-colors">About</a>
+                <a href="#philosophy" class="mobile-link text-brand-charcoal hover:text-brand-burgundy transition-colors">My Approach</a>
+                <a href="#pathways" class="mobile-link text-brand-charcoal hover:text-brand-burgundy transition-colors">Pathways</a>
+                <a href="#contact" class="mobile-link text-brand-charcoal hover:text-brand-burgundy transition-colors">Contact</a>
+            </div>
+        </div>
     </nav>    
     
     <!-- Hero -->    
@@ -129,22 +147,22 @@
     <!-- Philosophy -->    
     <section id="philosophy" class="py-24 bg-brand-sand/50">        
         <div class="max-w-5xl mx-auto px-6 text-center">            
-            <span class="font-sans text-brand-sage uppercase tracking-[0.2em] text-sm font-bold block mb-4">THE PHILOSOPHY</span>            
-            <h2 class="text-4xl md:text-5xl font-serif mb-16 text-brand-burgundy">Burnout is not about the hours you work.</h2>                       
+            <span class="font-sans text-brand-sage uppercase tracking-[0.2em] text-sm font-bold block mb-4">MY APPROACH</span>            
+            <h2 class="text-4xl md:text-5xl font-serif mb-16 text-brand-burgundy">Grounded support for burnout, transition, and change.</h2>                       
             
             <div class="grid md:grid-cols-2 gap-8 text-left">                
                 <!-- Box 1 -->                
                 <div class="bg-white p-10 rounded-3xl border border-brand-sage/10 shadow-sm flex flex-col h-full">                    
-                    <h3 class="text-2xl mb-4 italic text-brand-burgundy font-serif">The Internal Climate</h3>                    
+                    <h3 class="text-2xl mb-4 italic text-brand-burgundy font-serif">When life feels too much</h3>                    
                     <p class="text-brand-charcoal font-light leading-relaxed flex-grow">                        
-                        Exhaustion often comes from a lack of alignment with your true purpose. When we comply with societal or corporate norms that conflict with our values, our vital fire dims. We don't just need rest; we need reconnection.                    
+                        Burnout, emotional overload, and hormonal change can leave you feeling unlike yourself. You may still be functioning on the outside, while inside everything feels tired, tense, or out of balance.                    
                     </p>                
                 </div>                
                 <!-- Box 2 -->                
                 <div class="bg-white p-10 rounded-3xl border border-brand-sage/10 shadow-sm flex flex-col h-full">                    
-                    <h3 class="text-2xl mb-4 italic text-brand-burgundy font-serif">The Second Spring</h3>                    
+                    <h3 class="text-2xl mb-4 italic text-brand-burgundy font-serif">A grounded way of working</h3>                    
                     <p class="text-brand-charcoal font-light leading-relaxed flex-grow">                        
-                        In perimenopause and post-menopause, there is a biological call to rediscover identity. It is more than managing symptoms—it is a key moment to reconnect with nature and your own unique energy. It is not an ending, but a sacred opportunity to build a new structure.                    
+                        I offer calm, one-to-one support that helps you slow down, release internal pressure, and reconnect with clarity and steadiness. The work is gentle, integrative, and responsive to what you most need now.                    
                     </p>                
                 </div>            
             </div>        
@@ -309,7 +327,7 @@
                 <div>                    
                     <h2 class="text-4xl md:text-5xl font-serif mb-6 text-brand-sand">Get in Touch</h2>                    
                     <p class="text-brand-sand/80 mb-10 text-lg font-light leading-relaxed">                        
-                        For questions, private sessions, collaborations, or group experiences, you are welcome to send me a message here. If you are unsure where to begin, I can help you find the approach that best fits your current needs.                    
+                        For questions, private sessions, collaborations, or group experiences, you are welcome to send me a message here. If you are unsure what would support you best at this moment, I will be happy to help you find the most suitable approach.                    
                     </p>                                        
                     <div class="space-y-6">                        
                         <div class="flex items-start gap-4">                            
@@ -371,6 +389,25 @@
     
     <script>        
         document.addEventListener('DOMContentLoaded', () => {            
+            
+            // Mobile Menu Logic
+            const mobileBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const mobileLinks = document.querySelectorAll('.mobile-link');
+
+            if(mobileBtn && mobileMenu) {
+                mobileBtn.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                });
+
+                // Close menu when a link is clicked
+                mobileLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                    });
+                });
+            }
+
             // Tab logic            
             document.querySelectorAll('.interactive-tab').forEach(tab => {                
                 tab.addEventListener('click', () => {                    
