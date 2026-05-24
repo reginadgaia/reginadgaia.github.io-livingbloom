@@ -1,0 +1,1107 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Bucegi Journey - Living Bloom</title>
+   
+    <script src="https://cdn.tailwindcss.com"></script>
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,600;6..12,700&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['"Nunito Sans"', 'sans-serif'],
+                        'serif': ['Lora', 'serif'],
+                    },
+                    colors: {
+                        brand: {
+                            primary: '#660240',      // Deep Alchemical Burgundy
+                            burgundy: '#6B2D5C',     // Alternate Burgundy
+                            forest: '#334139',       // Deep Forest / Sage Green
+                            sage: '#8A9A5B',         // Grounded Sage (Light Green)
+                            sand: '#F7F5F0',         // Mushroom / Stone Beige
+                            neutral: '#F5F5F4',      // Neutral Backgrounds
+                            gold: '#EAB308',         // Solar Gold (Blooms/CTAs)
+                            metallic: '#D4AF37',     // Alternate Gold
+                            charcoal: '#2C3E50',     // Text
+                            cream: '#FFFDD0'         // Light accents
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom styles for details/summary accordion in FAQ */
+        details > summary {
+            list-style: none;
+        }
+        details > summary::-webkit-details-marker {
+            display: none;
+        }
+        
+        /* Hide scrollbar for cleaner look but keep functionality */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #F7F5F0;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #8A9A5B;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #660240;
+        }
+    </style>
+</head>
+<body class="font-sans text-brand-charcoal bg-brand-sand antialiased selection:bg-brand-gold selection:text-white pt-20">
+
+    <header class="fixed top-0 left-0 w-full z-50 bg-brand-sand/95 backdrop-blur-md border-b border-brand-sage/20 shadow-sm transition-all duration-300">
+        <div class="container mx-auto px-4 md:px-6 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-full flex items-center justify-center transition-transform group-hover:scale-105 overflow-hidden border border-brand-sage/20 bg-white shadow-sm">
+                    <img src="assets/Living_Bloom_Logo.png" alt="Living Bloom Logo" class="w-full h-full object-cover">
+                </div>
+                <span class="font-serif text-lg md:text-xl font-semibold text-brand-primary tracking-wide">Living Bloom</span>
+            </a>
+
+            <nav class="hidden lg:flex items-center gap-8 font-sans text-sm font-semibold tracking-widest uppercase text-brand-charcoal/80">
+                <a href="#process" class="hover:text-brand-gold transition-colors">Method</a>
+                <a href="#itinerary" class="hover:text-brand-gold transition-colors">Itinerary</a>
+                <a href="#guide" class="hover:text-brand-gold transition-colors">Guide</a>
+                <a href="#faq" class="hover:text-brand-gold transition-colors">FAQ</a>
+            </nav>
+
+            <a href="https://tally.so/r/81JdMA" target="_blank" class="bg-brand-primary text-white text-xs md:text-sm font-bold px-5 py-2.5 rounded-full uppercase tracking-widest hover:bg-brand-gold transition-colors shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+                Apply Now
+            </a>
+        </div>
+    </header>
+
+    <section class="relative w-full flex flex-col min-h-[90vh] bg-brand-charcoal -mt-20">
+       
+        <div class="relative w-full h-[70vh] md:h-[80vh] overflow-hidden">
+            <video autoplay muted loop playsinline class="hidden md:block absolute inset-0 w-full h-full object-cover object-center opacity-80">
+                <source src="https://ik.imagekit.io/livbloom132033/RetreatComplement/RetreatVideo.mp4?updatedAt=1779610411249" type="video/mp4">
+            </video>
+            <img src="https://ik.imagekit.io/livbloom132033/RetreatComplement/banner-bucegi.png" alt="Bucegi Mountains" class="block md:hidden absolute inset-0 w-full h-full object-cover object-center opacity-90">
+            
+            <div class="absolute inset-0 bg-brand-primary/30 mix-blend-multiply"></div>
+            <div class="absolute bottom-0 left-0 w-full h-48 bg-gradient-to-t from-brand-sand to-transparent"></div>
+        </div>
+
+        <div class="relative z-10 -mt-32 md:-mt-48 px-4 md:px-6 pb-12">
+            <div class="container mx-auto max-w-4xl bg-brand-sand rounded-[2rem] shadow-2xl p-6 md:p-16 text-center border-t-[6px] border-brand-gold relative mt-16 md:mt-24">
+               
+                <div class="absolute top-0 right-0 w-64 h-64 bg-brand-sage opacity-10 rounded-full blur-3xl pointer-events-none"></div>
+                <div class="absolute bottom-0 left-0 -ml-16 -mb-16 w-48 h-48 bg-brand-burgundy opacity-5 rounded-full blur-2xl pointer-events-none"></div>
+
+                <div class="absolute -top-12 left-1/2 transform -translate-x-1/2 z-20">
+                    <img src="assets/Living_Bloom_Logo.png" alt="Living Bloom Logo" class="w-24 h-24 bg-white rounded-full border-[6px] border-brand-sand shadow-sm object-cover">
+                </div>
+
+                <p class="font-sans font-bold tracking-widest text-brand-sage uppercase mb-4 text-xs md:text-sm mt-10 md:mt-8 relative z-10">
+                    BUȘTENI & BUCEGI MOUNTAINS, ROMANIA | 11–15 SEPTEMBER 2026
+                </p>
+               
+                <h1 class="font-serif text-4xl md:text-6xl leading-tight mb-2 text-brand-primary font-medium tracking-wide relative z-10">
+                    The Bucegi Journey.
+                </h1>
+               
+                <h2 class="font-serif italic text-brand-burgundy font-normal text-xl md:text-3xl mb-8 relative z-10">
+                    Clarity, Courage & Renewed Direction.
+                </h2>
+               
+                <p class="font-sans text-base md:text-xl text-brand-charcoal font-light leading-relaxed max-w-2xl mx-auto mb-10 relative z-10">
+                    An invitation for those who feel a quiet disconnect within, ready to reclaim their clarity, inner power, and a renewed sense of direction.
+                </p>
+
+                <div class="flex justify-center relative z-10">
+                    <a href="https://tally.so/r/81JdMA" target="_blank" class="inline-block bg-brand-gold text-white font-bold px-8 md:px-10 py-4 rounded-full uppercase tracking-widest hover:bg-brand-primary transition-all duration-300 shadow-[0_8px_20px_rgba(234,179,8,0.3)] transform hover:-translate-y-1 text-sm md:text-base">
+                        Apply for the Retreat
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12 md:py-16 bg-brand-neutral relative" id="threshold">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <div class="mb-16">
+                <div class="text-center mb-10">
+                    <h2 class="font-serif text-4xl md:text-5xl text-brand-primary mb-4">Who is this for?</h2>
+                    <div class="w-16 h-1 bg-brand-sage mx-auto rounded-full"></div>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-brand-charcoal font-light text-base leading-relaxed">
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-brand-sage/20 hover:border-brand-gold transition-colors">
+                        <h4 class="font-serif text-xl text-brand-burgundy mb-3 font-medium">The endless research loop</h4>
+                        <p>You spend hours researching new careers, projects, or life changes, opening dozens of tabs, but you eventually close them all because you don't trust your gut enough to choose one.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-brand-sage/20 hover:border-brand-gold transition-colors">
+                        <h4 class="font-serif text-xl text-brand-burgundy mb-3 font-medium">The "Maybe Next Year" habit</h4>
+                        <p>You quietly know it is time for a major change in your life—a new path, a shift in dynamics, a bold step—but you keep finding logical excuses to postpone the leap because you lack the courage to disrupt the status quo.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-brand-sage/20 hover:border-brand-gold transition-colors">
+                        <h4 class="font-serif text-xl text-brand-burgundy mb-3 font-medium">The default to numbing</h4>
+                        <p>Instead of engaging in passions or projects that used to give you life, you spend your evenings defaulting to endless scrolling or screens just to quiet the background noise in your head.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-brand-sage/20 hover:border-brand-gold transition-colors">
+                        <h4 class="font-serif text-xl text-brand-burgundy mb-3 font-medium">Swallowing your boundaries</h4>
+                        <p>You catch yourself frequently saying "it's fine" or over-accommodating others in your daily interactions, physically feeling the drain of giving away your power just to keep the peace.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-brand-sage/20 md:col-span-2 hover:border-brand-gold transition-colors text-center md:text-left">
+                        <h4 class="font-serif text-xl text-brand-burgundy mb-3 font-medium">The memory blur</h4>
+                        <p>Your daily routine runs flawlessly, yet you frequently reach the end of the month realizing you haven't felt deeply engaged, passionately driven, or fully alive in weeks.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-brand-sand rounded-[2rem] p-8 md:p-16 text-center border border-brand-sage/20 relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-48 h-48 bg-brand-gold opacity-5 rounded-full blur-2xl -mr-10 -mt-10"></div>
+                <div class="absolute bottom-0 left-0 w-32 h-32 bg-brand-burgundy opacity-5 rounded-full blur-2xl -ml-10 -mb-10"></div>
+                
+                <span class="font-sans text-brand-sage font-bold tracking-widest uppercase text-xs block mb-4 relative z-10">The Diagnosis</span>
+                <h2 class="font-serif text-3xl md:text-4xl text-brand-primary mb-8 relative z-10">The Alignment Gap</h2>
+                
+                <div class="max-w-3xl mx-auto space-y-6 text-base md:text-lg font-sans text-brand-charcoal leading-relaxed font-light relative z-10">
+                    <p>
+                        If you recognized yourself in those behaviors, understand this: <em>you are not failing.</em> You are experiencing a highly effective survival mechanism that has simply outlived its usefulness. Let's call it <strong>The Alignment Gap</strong>.
+                    </p>
+                    <p>
+                        For years, you have navigated using an external compass—fulfilling expectations and performing beautifully to achieve "success." But the root cause of your exhaustion is simple: <strong class="text-brand-burgundy font-medium">The purpose and pace the world demands from you no longer match the deeper truth of who you are.</strong>
+                    </p>
+                    <p class="font-serif italic text-xl md:text-2xl text-brand-primary py-4 font-normal">
+                        "You don’t lack clarity; you are just using the wrong map."
+                    </p>
+                    <p>
+                        The hesitation, the numbing, and the drained energy are not character flaws. They are symptoms of your inner power refusing to invest energy into a path that isn't truly yours anymore. You aren't lost; you are just trying to find your soul's direction on a map drawn by someone else.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12 md:py-16 bg-brand-forest relative overflow-hidden" id="process">
+        <div class="absolute top-0 left-0 w-full h-full bg-[url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80')] opacity-5 bg-cover bg-center mix-blend-overlay pointer-events-none"></div>
+
+        <div class="container mx-auto px-6 max-w-6xl relative z-10">
+            <div class="text-center mb-12">
+                <span class="font-sans text-brand-gold font-bold tracking-widest uppercase text-xs">The Method</span>
+                <h2 class="font-serif text-4xl md:text-5xl text-brand-cream mt-4 mb-6">The Embodied Alignment Process</h2>
+                <div class="w-16 h-1 bg-brand-sage mx-auto mb-6 rounded-full"></div>
+                <p class="text-brand-sand/80 max-w-3xl mx-auto text-lg font-light">
+                    We do not close this gap with more overthinking, more endless journaling, or more research. We close it through a grounded, physical, and highly intentional process that combines body-based practice, nature immersion, physical activity, and guided reflection.
+                </p>
+            </div>
+
+            <div class="space-y-6 max-w-5xl mx-auto">
+                
+                <div class="bg-brand-sage p-8 md:p-10 rounded-[2rem] shadow-xl hover:shadow-2xl hover:scale-[1.01] transition-all duration-500 relative overflow-hidden">
+                    <h3 class="font-serif text-2xl text-brand-cream mb-6 relative z-10"><span class="text-brand-burgundy font-bold mr-2 uppercase text-sm tracking-widest">Phase 1:</span> Unplug & Drop In (The Release)</h3>
+                    <div class="grid md:grid-cols-3 gap-8 text-white font-medium text-sm leading-relaxed relative z-10">
+                        <div>
+                            <strong class="block text-brand-gold mb-2 font-bold uppercase tracking-wider text-xs">The Focus</strong>
+                            Interrupting the "auto-pilot" and "numbing" cycles. Before you can find a new direction, you must clear the mental static and release the exhausting need to constantly perform for others. Identify and release fears and programs that were put on you.
+                        </div>
+                        <div>
+                            <strong class="block text-brand-gold mb-2 font-bold uppercase tracking-wider text-xs">The Practices</strong>
+                            Guided inquiry, grounding meditations, deep reflection, and conscious nature immersion.
+                        </div>
+                        <div>
+                            <strong class="block text-brand-gold mb-2 font-bold uppercase tracking-wider text-xs">The Real-Life Shift</strong>
+                            You put down the heavy load of everything you were carrying. You can finally hear your own inner voice instead of your anxious thoughts.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-brand-sage p-8 md:p-10 rounded-[2rem] shadow-xl hover:shadow-2xl hover:scale-[1.01] transition-all duration-500 relative overflow-hidden">
+                    <h3 class="font-serif text-2xl text-brand-cream mb-6 relative z-10"><span class="text-brand-burgundy font-bold mr-2 uppercase text-sm tracking-widest">Phase 2:</span> The Ascent & Recalibration (The Reconnection)</h3>
+                    <div class="grid md:grid-cols-3 gap-8 text-white font-medium text-sm leading-relaxed relative z-10">
+                        <div>
+                            <strong class="block text-brand-gold mb-2 font-bold uppercase tracking-wider text-xs">The Focus</strong>
+                            You cannot think your way out of chronic indecision. We enter the mountain with intention, bypassing the analytical mind and using physical movement to rebuild your capacity to feel and trust your inner power.
+                        </div>
+                        <div>
+                            <strong class="block text-brand-gold mb-2 font-bold uppercase tracking-wider text-xs">The Practices</strong>
+                            Active mountain pilgrimage (hiking), embodiment work, guided meditation, nature contemplation, and immersive rhythm (drum) journeys on the high plateau.
+                        </div>
+                        <div>
+                            <strong class="block text-brand-gold mb-2 font-bold uppercase tracking-wider text-xs">The Real-Life Shift</strong>
+                            You stop swallowing your boundaries. As you physically rise toward a wider perspective, your mental horizon expands too. You recover your natural vitality and learn how to feel a true, trustworthy "yes" or "no" in your gut.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-brand-sage p-8 md:p-10 rounded-[2rem] shadow-xl hover:shadow-2xl hover:scale-[1.01] transition-all duration-500 relative overflow-hidden">
+                    <h3 class="font-serif text-2xl text-brand-cream mb-6 relative z-10"><span class="text-brand-burgundy font-bold mr-2 uppercase text-sm tracking-widest">Phase 3:</span> Integration (The Direction)</h3>
+                    <div class="grid md:grid-cols-3 gap-8 text-white font-medium text-sm leading-relaxed relative z-10">
+                        <div>
+                            <strong class="block text-brand-gold mb-2 font-bold uppercase tracking-wider text-xs">The Focus</strong>
+                            Moving from insight into grounded action. We take the clarity and courage you gained on the mountain and anchor them into your everyday life, ensuring you leave with a steady inner compass.
+                        </div>
+                        <div>
+                            <strong class="block text-brand-gold mb-2 font-bold uppercase tracking-wider text-xs">The Practices</strong>
+                            Embodied practices, vision work, focused reflection, and final group integration circles.
+                        </div>
+                        <div>
+                            <strong class="block text-brand-gold mb-2 font-bold uppercase tracking-wider text-xs">The Real-Life Shift</strong>
+                            You cure the "Maybe Next Year" habit. You leave feeling capable and grounded, equipped with an actionable blueprint: knowing exactly where to draw firm boundaries and what specific path to confidently step onto next.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="mt-12 text-center max-w-3xl mx-auto px-4">
+                <p class="text-brand-cream font-serif text-lg md:text-2xl italic leading-relaxed">
+                    "The Bucegi Journey is not an escape from life. It is a deliberate step out of noise, pressure, and repetition so you can hear yourself again — and return with greater clarity and confidence about what is next."
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="pt-12 md:pt-16 pb-8 md:pb-12 bg-white relative">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <div class="text-center mb-12">
+                <span class="font-sans text-brand-sage font-bold tracking-widest uppercase text-xs">The Outcomes</span>
+                <h2 class="font-serif text-3xl md:text-5xl text-brand-primary mt-4 mb-6">What changes when you return</h2>
+                <div class="w-16 h-1 bg-brand-sage mx-auto mb-6 rounded-full"></div>
+                <p class="text-brand-charcoal max-w-2xl mx-auto text-base md:text-lg font-light">
+                    This retreat is designed to support real, lasting change when you return to your home, to your office, your routines, and your relationships.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-brand-neutral p-6 md:p-8 rounded-[2rem] border border-brand-sage/20 flex flex-col md:flex-row gap-4 md:gap-6 hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 rounded-full bg-brand-sage text-white flex items-center justify-center flex-shrink-0 mt-1 shadow-sm">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <div>
+                        <h4 class="font-serif text-xl text-brand-primary mb-2 md:mb-3">Clearer decisions and less inner conflict</h4>
+                        <p class="text-brand-charcoal font-light text-sm leading-relaxed">When facing your next big career move or life choice, you will be able to trust your gut rather than getting stuck in endless research and hesitation.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-brand-neutral p-6 md:p-8 rounded-[2rem] border border-brand-sage/20 flex flex-col md:flex-row gap-4 md:gap-6 hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 rounded-full bg-brand-burgundy text-white flex items-center justify-center flex-shrink-0 mt-1 shadow-sm">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+                    </div>
+                    <div>
+                        <h4 class="font-serif text-xl text-brand-primary mb-2 md:mb-3">Stronger boundaries without the guilt</h4>
+                        <p class="text-brand-charcoal font-light text-sm leading-relaxed">You will return to your colleagues and family able to decline draining requests and protect your time, ending the habit of over-accommodating just to keep the peace.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-brand-neutral p-6 md:p-8 rounded-[2rem] border border-brand-sage/20 flex flex-col md:flex-row gap-4 md:gap-6 hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 rounded-full bg-brand-gold text-white flex items-center justify-center flex-shrink-0 mt-1 shadow-sm">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
+                    <div>
+                        <h4 class="font-serif text-xl text-brand-primary mb-2 md:mb-3">Renewed energy and vitality</h4>
+                        <p class="text-brand-charcoal font-light text-sm leading-relaxed">Instead of spending your weekends simply recovering from the week's stress, you will have the focus and energy to engage in things that make you feel fully alive.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-brand-neutral p-6 md:p-8 rounded-[2rem] border border-brand-sage/20 flex flex-col md:flex-row gap-4 md:gap-6 hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 rounded-full bg-brand-primary text-white flex items-center justify-center flex-shrink-0 mt-1 shadow-sm">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 21v-4m0 0V5a2 2 0 012-2h6.5l1 1H21l-3 6 3 6h-8.5l-1-1H5a2 2 0 00-2 2zm9-13.5V9"></path></svg>
+                    </div>
+                    <div>
+                        <h4 class="font-serif text-xl text-brand-primary mb-2 md:mb-3">A quiet, grounded confidence</h4>
+                        <p class="text-brand-charcoal font-light text-sm leading-relaxed">The "Maybe Next Year" excuses will be replaced by a steady inner compass and the courage to finally take the practical steps you have been putting off.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-10 text-center">
+                 <a href="https://tally.so/r/81JdMA" target="_blank" class="inline-block bg-brand-primary text-white font-bold px-10 py-4 rounded-full uppercase tracking-widest hover:bg-brand-gold transition-all duration-300 shadow-lg transform hover:-translate-y-1">
+                    Apply for the Retreat
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="pt-8 pb-8 md:pb-12 bg-brand-sand" id="landscape">
+        <div class="container mx-auto px-6 max-w-6xl">
+            <div class="flex flex-col lg:flex-row gap-12 items-center">
+                
+                <div class="lg:w-1/2 relative lg:-mt-12 mt-6 order-2 lg:order-1">
+                    <div class="absolute -inset-4 bg-brand-sage/20 rounded-[2.5rem] transform -rotate-3 transition-transform duration-300"></div>
+                    <img src="https://ik.imagekit.io/livbloom132033/Day2/Omu-hiking-landscape.png?updatedAt=1779530080649" alt="The Bucegi Landscape" class="relative rounded-[2rem] shadow-xl w-full object-cover z-10 border border-white/50">
+                </div>
+
+                <div class="lg:w-1/2 order-1 lg:order-2">
+                    <h2 class="font-serif text-4xl md:text-5xl text-brand-primary mb-6 leading-tight">Why the Bucegi? <br><span class="text-brand-sage italic">Why this moment?</span></h2>
+                    
+                    <div class="space-y-4 md:space-y-6 text-brand-charcoal font-light leading-relaxed text-base md:text-lg">
+                        <p>
+                            Some places do more than offer a beautiful backdrop; their sheer physical scale puts our daily worries back into proportion. We chose the Bucegi Mountains because this landscape acts as a natural reset for your nervous system. Far from the cramped, relentless noise of urban life, the vastness of the high plateau, the deep valleys, the lake, the cave, and the crisp silence surrounding the ancient Sphinx rock formation create a physical environment where your mind naturally quiets.
+                        </p>
+                        <p>
+                            These landscapes provide the ideal conditions for meeting yourself, gaining perspective, and true reconnection.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="bg-white p-8 md:p-12 rounded-[2rem] border-l-[6px] border-brand-gold shadow-sm mt-12 relative overflow-hidden max-w-5xl mx-auto">
+                <div class="absolute right-0 top-0 w-32 h-32 bg-brand-gold/10 rounded-full -mr-16 -mt-16"></div>
+                
+                <h4 class="font-serif text-2xl text-brand-burgundy mb-4 relative z-10">The Ideal Timing</h4>
+                <p class="text-base md:text-lg relative z-10 font-light text-brand-charcoal leading-relaxed">
+                    September is the ideal moment. It is the closing of summer—a time to gather strength and insight before the season turns and the year rushes toward its end. This retreat is designed for that exact timing: when you don’t need more stimulation, but a meaningful pause. The summer crowds have left the Bucegi plateau, leaving quiet trails, crisp air, and the perfect conditions to fully immerse yourself in the journey.
+                </p>
+            </div>
+
+            <div class="mt-10 grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
+                <img src="https://ik.imagekit.io/livbloom132033/Day1/lakelandscape3.jpg?updatedAt=1776264793997" alt="Lake Landscape" class="w-full h-32 md:h-64 object-cover rounded-xl shadow-sm hover:opacity-90 transition-opacity">
+                <img src="https://ik.imagekit.io/livbloom132033/Day1/landscapeday1-5.jpg?updatedAt=1776264794301" alt="Mountain Scenery" class="w-full h-32 md:h-64 object-cover rounded-xl shadow-sm hover:opacity-90 transition-opacity">
+                <img src="https://ik.imagekit.io/livbloom132033/Day2/Omu-hiking-landscape3.png?updatedAt=1779530080552" alt="Plateau Hiking" class="w-full h-32 md:h-64 object-cover rounded-xl shadow-sm hover:opacity-90 transition-opacity">
+                <img src="https://ik.imagekit.io/livbloom132033/Day3/esfinge.jpg?updatedAt=1779530128401" alt="The Sphinx Rock" class="w-full h-32 md:h-64 object-cover rounded-xl shadow-sm hover:opacity-90 transition-opacity">
+            </div>
+        </div>
+    </section>
+
+    <section class="pt-10 pb-12 bg-brand-neutral relative" id="itinerary">
+        <div class="container mx-auto px-6 max-w-6xl relative z-10">
+           
+            <div class="text-center mb-12">
+                <span class="font-sans text-brand-gold font-bold tracking-widest uppercase text-xs">How the journey works</span>
+                <h2 class="font-serif text-3xl md:text-5xl text-brand-primary leading-tight mt-4 mb-6">
+                    The 5-Day Strategic Reset
+                </h2>
+                <div class="w-16 h-1 bg-brand-sage mx-auto mb-6 rounded-full"></div>
+                <p class="max-w-3xl mx-auto text-lg md:text-xl text-brand-primary font-serif italic leading-relaxed mb-6">
+                    "We do not force breakthroughs; we create the right conditions for them."
+                </p>
+                <p class="max-w-3xl mx-auto text-base md:text-lg text-brand-charcoal font-light leading-relaxed mb-6">
+                    This journey follows a carefully guided progression through the phases of the Embodied Alignment Process: release, reconnection, and direction. Each day weaves together embodiment practices, nature experiences, and guided meditations, ensuring your insights do not remain abstract—they become a grounded, lived experience.
+                </p>
+                <p class="max-w-3xl mx-auto text-base md:text-lg text-brand-charcoal font-light leading-relaxed">
+                    The experience is moderate and energizing rather than extreme. We use the cave, the forest, the mountain to awaken the body and sharpen perception, keeping the process grounded, structured, and deep.
+                </p>
+            </div>
+
+            <div class="relative wrap overflow-hidden p-2 md:p-10 h-full max-w-5xl mx-auto">
+                <div class="absolute border-opacity-20 border-brand-sage h-full border hidden md:block" style="left: 50%; transform: translateX(-50%);"></div>
+                <div class="absolute border-opacity-20 border-brand-sage h-full border md:hidden" style="left: 24px;"></div>
+
+                <div class="mb-12 flex flex-col md:flex-row justify-between items-center w-full relative">
+                    <div class="absolute left-1/2 transform -translate-x-1/2 hidden md:flex items-center justify-center bg-brand-gold shadow-xl w-10 h-10 rounded-full border-[3px] border-white z-20">
+                        <span class="font-semibold text-white">1</span>
+                    </div>
+                    <div class="absolute left-[24px] top-8 transform -translate-x-1/2 md:hidden flex items-center justify-center bg-brand-gold shadow-xl w-8 h-8 rounded-full border-[3px] border-white z-20">
+                        <span class="font-semibold text-xs text-white">1</span>
+                    </div>
+
+                    <div class="hidden md:block w-5/12 pr-10">
+                        <div class="grid grid-cols-2 gap-4">
+                            <img src="https://ik.imagekit.io/livbloom132033/RetreatComplement/pratices2.jpg" class="w-full h-48 object-cover rounded-2xl shadow-sm hover:shadow-md transition-shadow" alt="Day 1 Practices">
+                            <img src="https://ik.imagekit.io/livbloom132033/Hotel/viewhotel1.jpg" class="w-full h-48 object-cover rounded-2xl shadow-sm hover:shadow-md transition-shadow translate-y-6" alt="Hotel View">
+                        </div>
+                    </div>
+
+                    <div class="w-full md:w-5/12 pl-12 md:pl-10">
+                        <div class="bg-white border border-brand-sage/20 rounded-[2rem] shadow-sm hover:shadow-md hover:border-brand-gold transition-all px-6 py-8">
+                            <span class="font-sans font-bold text-brand-sage tracking-widest uppercase text-xs mb-1 block">Day 1 &bull; Unplug & Drop In</span>
+                            <h4 class="font-serif text-2xl text-brand-primary mb-4">Grounding and Intention</h4>
+                            <p class="text-brand-charcoal font-light leading-relaxed text-sm mb-4">
+                                Your journey begins in the mountain town of Bușteni. The moment you arrive, the requirement to "perform" ends. This first evening is dedicated to actively unplugging—stepping out of your daily responsibilities and allowing your nervous system to recognize it is safe to rest.
+                            </p>
+                            <p class="text-brand-charcoal font-light leading-relaxed text-sm mb-4">
+                                At 17:00, we gather for our Opening Circle—the true start of the retreat. Here, we leave our external roles at the door, set our intentions for the days ahead, and connect with the group. We end the day with a warm, shared dinner at the hotel.
+                            </p>
+                            <p class="text-brand-sage/80 italic text-xs">Note: Check-in at Hotel Steaua Nordului is available from 14:00.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-12 flex flex-col md:flex-row justify-between items-center w-full relative">
+                    <div class="absolute left-1/2 transform -translate-x-1/2 hidden md:flex items-center justify-center bg-brand-sage shadow-xl w-10 h-10 rounded-full border-[3px] border-white z-20">
+                        <span class="font-semibold text-white">2</span>
+                    </div>
+                    <div class="absolute left-[24px] top-8 transform -translate-x-1/2 md:hidden flex items-center justify-center bg-brand-sage shadow-xl w-8 h-8 rounded-full border-[3px] border-white z-20">
+                        <span class="font-semibold text-xs text-white">2</span>
+                    </div>
+
+                    <div class="w-full md:w-5/12 pl-12 md:pl-0 md:pr-10 mb-6 md:mb-0">
+                        <div class="bg-white border border-brand-sage/20 rounded-[2rem] shadow-sm hover:shadow-md hover:border-brand-sage transition-all px-6 py-8">
+                            <span class="font-sans font-bold text-brand-sage tracking-widest uppercase text-xs mb-1 block">Day 2 &bull; Unplug & Drop In</span>
+                            <h4 class="font-serif text-2xl text-brand-primary mb-4">The Descent — Letting Go</h4>
+                            <p class="text-brand-charcoal font-light leading-relaxed text-sm mb-4">
+                                This morning begins with an embodiment practice designed to gently pull you out of your head and into your physical senses. After breakfast, we drive to the Ialomiței Cave. Descending into the quiet depth of the cave offers a visceral experience of "dropping in."
+                            </p>
+                            <p class="text-brand-charcoal font-light leading-relaxed text-sm mb-4">
+                                Following a shared lunch, we take a peaceful walk by Lake Bolboci. In the afternoon, we gather for a guided drum meditation in the woods—using rhythm as a grounded tool to physically discharge stored tension.
+                            </p>
+                            <p class="text-brand-sage/80 italic text-xs">Note: We recommend bringing an extra empty bottle to collect fresh mountain water from the cave.</p>
+                        </div>
+                    </div>
+
+                    <div class="hidden md:block w-5/12 pl-10">
+                        <div class="grid grid-cols-2 gap-4 items-center">
+                            <div class="space-y-4">
+                                <img src="https://ik.imagekit.io/livbloom132033/Day1/cavechurch1.jpg" class="w-full h-32 object-cover rounded-2xl shadow-sm hover:shadow-md transition-shadow" alt="Cave">
+                                <img src="https://ik.imagekit.io/livbloom132033/Day1/caveinterior.png" class="w-full h-40 object-cover rounded-2xl shadow-sm hover:shadow-md transition-shadow" alt="Cave Interior">
+                            </div>
+                            <div class="space-y-4 translate-y-4">
+                                <img src="https://ik.imagekit.io/livbloom132033/Day1/lakelandscape3.jpg" class="w-full h-40 object-cover rounded-2xl shadow-sm hover:shadow-md transition-shadow" alt="Lake">
+                                <img src="https://ik.imagekit.io/livbloom132033/Guide/guide-lake1.jpg" class="w-full h-32 object-cover rounded-2xl shadow-sm hover:shadow-md transition-shadow" alt="Guide by lake">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-12 flex flex-col md:flex-row justify-between items-center w-full relative">
+                    <div class="absolute left-1/2 transform -translate-x-1/2 hidden md:flex items-center justify-center bg-brand-primary shadow-xl w-10 h-10 rounded-full border-[3px] border-white z-20">
+                        <span class="font-semibold text-white">3</span>
+                    </div>
+                    <div class="absolute left-[24px] top-8 transform -translate-x-1/2 md:hidden flex items-center justify-center bg-brand-primary shadow-xl w-8 h-8 rounded-full border-[3px] border-white z-20">
+                        <span class="font-semibold text-xs text-white">3</span>
+                    </div>
+
+                    <div class="hidden md:block w-5/12 pr-10">
+                        <div class="flex flex-col gap-4">
+                            <img src="https://ik.imagekit.io/livbloom132033/Day2/GroupWalkLandscape.JPG" class="w-full h-48 object-cover rounded-2xl shadow-sm hover:shadow-md transition-shadow" alt="Hiking">
+                            <div class="grid grid-cols-2 gap-4">
+                                <img src="https://ik.imagekit.io/livbloom132033/Day2/Omu-hiking-landscape2.png" class="w-full h-32 object-cover rounded-2xl shadow-sm hover:shadow-md transition-shadow" alt="Landscape">
+                                <img src="https://ik.imagekit.io/livbloom132033/Day2/Omu-caban.png" class="w-full h-32 object-cover rounded-2xl shadow-sm hover:shadow-md transition-shadow" alt="Mountain Hut">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w-full md:w-5/12 pl-12 md:pl-10">
+                        <div class="bg-white border border-brand-sage/20 rounded-[2rem] shadow-sm hover:shadow-md hover:border-brand-primary transition-all px-6 py-8">
+                            <span class="font-sans font-bold text-brand-sage tracking-widest uppercase text-xs mb-1 block">Day 3 &bull; The Ascent</span>
+                            <h4 class="font-serif text-2xl text-brand-primary mb-4">The Ascent — Gaining Perspective</h4>
+                            <p class="text-brand-charcoal font-light leading-relaxed text-sm mb-4">
+                                Following an early breakfast, we head up to the high Bucegi plateau for a full day of active pilgrimage toward Mount Omu. This hike is the physical core of our Recalibration phase. We use the steady, rhythmic movement of walking to bypass the over-analytical mind.
+                            </p>
+                            <p class="text-brand-charcoal font-light leading-relaxed text-sm mb-4">
+                                After a well-earned picnic lunch on the mountain, enjoying the vast views, we hike to the Caraiman mountain hut. Weather permitting, we trade the hotel for an authentic high-altitude experience. We will share a sunset practice, a hearty warm dinner, and sleep close to the stars.
+                            </p>
+                            <p class="text-brand-sage/80 italic text-xs">Note: Accommodation at the hut is in shared, rustic dorms. No showers available for this night.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-12 flex flex-col md:flex-row justify-between items-center w-full relative">
+                    <div class="absolute left-1/2 transform -translate-x-1/2 hidden md:flex items-center justify-center bg-brand-burgundy shadow-xl w-10 h-10 rounded-full border-[3px] border-white z-20">
+                        <span class="font-semibold text-white">4</span>
+                    </div>
+                    <div class="absolute left-[24px] top-8 transform -translate-x-1/2 md:hidden flex items-center justify-center bg-brand-burgundy shadow-xl w-8 h-8 rounded-full border-[3px] border-white z-20">
+                        <span class="font-semibold text-xs text-white">4</span>
+                    </div>
+
+                    <div class="w-full md:w-5/12 pl-12 md:pl-0 md:pr-10 mb-6 md:mb-0">
+                        <div class="bg-white border border-brand-sage/20 rounded-[2rem] shadow-sm hover:shadow-md hover:border-brand-burgundy transition-all px-6 py-8">
+                            <span class="font-sans font-bold text-brand-sage tracking-widest uppercase text-xs mb-1 block">Day 4 &bull; Recalibration</span>
+                            <h4 class="font-serif text-2xl text-brand-primary mb-4">The Plateau — Finding Clarity</h4>
+                            <p class="text-brand-charcoal font-light leading-relaxed text-sm mb-4">
+                                We wake up at the mountain hut, starting our day with a grounding embodiment practice to anchor the strength built from yesterday's hike. Today is the culmination of our inner work, spent near the legendary Sphinx and Babele stone formations. 
+                            </p>
+                            <p class="text-brand-charcoal font-light leading-relaxed text-sm mb-4">
+                                By now, the question shifts from "What is wrong?" to "What is now clear?" Near the ancient stones, we will hold a guided drum journey to access a renewed sense of personal power and a clear direction.
+                            </p>
+                            <p class="text-brand-charcoal font-light leading-relaxed text-sm">
+                                We will enjoy a picnic on the plateau before beginning our descent back to Bușteni. You will have free time to rest before we gather for a night integration circle, followed by dinner.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="hidden md:block w-5/12 pl-10">
+                        <div class="grid grid-cols-2 gap-4 items-center">
+                            <div class="space-y-4">
+                                <img src="https://ik.imagekit.io/livbloom132033/Day3/esfinge.jpg" class="w-full h-32 object-cover rounded-2xl shadow-sm hover:shadow-md transition-shadow" alt="Sphinx">
+                                <img src="https://ik.imagekit.io/livbloom132033/Day3/Babele3.jpg" class="w-full h-40 object-cover rounded-2xl shadow-sm hover:shadow-md transition-shadow" alt="Babele">
+                            </div>
+                            <div class="space-y-4 translate-y-4">
+                                <img src="https://ik.imagekit.io/livbloom132033/Day3/guide-w-esfinge.JPG" class="w-full h-40 object-cover rounded-2xl shadow-sm hover:shadow-md transition-shadow" alt="Guide Sphinx">
+                                <img src="https://ik.imagekit.io/livbloom132033/Day2/nearbabele.JPG" class="w-full h-32 object-cover rounded-2xl shadow-sm hover:shadow-md transition-shadow" alt="Near Babele">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-4 flex flex-col md:flex-row justify-between items-center w-full relative">
+                    <div class="absolute left-1/2 transform -translate-x-1/2 hidden md:flex items-center justify-center bg-brand-gold shadow-xl w-10 h-10 rounded-full border-[3px] border-white z-20">
+                        <span class="font-semibold text-white">5</span>
+                    </div>
+                    <div class="absolute left-[24px] top-8 transform -translate-x-1/2 md:hidden flex items-center justify-center bg-brand-gold shadow-xl w-8 h-8 rounded-full border-[3px] border-white z-20">
+                        <span class="font-semibold text-xs text-white">5</span>
+                    </div>
+
+                    <div class="hidden md:block w-5/12 pr-10">
+                        <div class="grid grid-cols-2 gap-4">
+                            <img src="https://ik.imagekit.io/livbloom132033/RetreatComplement/leavingthemountains.jpg" alt="Leaving" class="w-full h-48 object-cover rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+                            <img src="https://ik.imagekit.io/livbloom132033/RetreatComplement/nearhotel.jpg" alt="Near Hotel" class="w-full h-48 object-cover rounded-2xl shadow-sm hover:shadow-md transition-shadow translate-y-6">
+                        </div>
+                    </div>
+
+                    <div class="w-full md:w-5/12 pl-12 md:pl-10">
+                        <div class="bg-white border border-brand-sage/20 rounded-[2rem] shadow-sm hover:shadow-md hover:border-brand-gold transition-all px-6 py-8">
+                            <span class="font-sans font-bold text-brand-sage tracking-widest uppercase text-xs mb-1 block">Day 5 &bull; Integration</span>
+                            <h4 class="font-serif text-2xl text-brand-primary mb-4">Integration and Return</h4>
+                            <p class="text-brand-charcoal font-light leading-relaxed text-sm mb-4">
+                                The journey doesn't end on the mountain; it ends when we return home. On this final morning, we seal the process. After a gentle morning practice and breakfast, we will gather for our closing circle.
+                            </p>
+                            <p class="text-brand-charcoal font-light leading-relaxed text-sm mb-4">
+                                Through vision-based exercises, final integration work, and personal guidance, we will connect your restored clarity and courage directly to your renewed direction. The goal is for you to leave feeling capable and grounded.
+                            </p>
+                            <p class="text-brand-sage/80 italic text-xs">We share one last lunch together. Departure is at 14:00.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <p class="text-center text-sm text-brand-sage mt-2 italic bg-brand-sage/10 p-4 rounded-xl max-w-3xl mx-auto">Note on the itinerary: The mountain always sets the final conditions. While we maintain a clear structure and intention for the journey, the exact daily flow and activities may be adjusted depending on weather or group safety. The core arc of the retreat remains intact no matter the conditions.</p>
+           
+        </div>
+    </section>
+
+    <section class="pt-8 pb-12 bg-brand-sand" id="guide">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <div class="bg-white rounded-[2rem] shadow-xl p-8 md:p-16 border border-brand-sage/20 relative overflow-hidden">
+                
+                <div class="absolute top-0 right-0 w-32 h-32 bg-brand-cream rounded-bl-[100px] -z-0"></div>
+                <div class="absolute bottom-0 left-0 w-24 h-24 bg-brand-sage/10 rounded-tr-[80px] -z-0"></div>
+
+                <div class="flex flex-col md:flex-row gap-12 items-center relative z-10">
+                   
+                    <div class="w-48 h-48 md:w-64 md:h-64 flex-shrink-0 rounded-full overflow-hidden border-4 border-brand-sand shadow-lg">
+                        <img src="https://ik.imagekit.io/livbloom132033/Guide/guide-esfinge1.JPG?updatedAt=1779530366853" alt="Regina D'Gaia" class="w-full h-full object-cover">
+                    </div>
+                   
+                    <div>
+                        <span class="font-sans text-brand-gold font-bold tracking-widest uppercase text-xs block mb-2">Your Guide</span>
+                        <h2 class="font-serif text-3xl md:text-4xl text-brand-primary mb-2">Regina D’Gaia</h2>
+                        <h3 class="font-sans text-brand-sage mb-6 italic">Guided with Discernment</h3>
+                        
+                        <div class="space-y-4 font-sans text-brand-charcoal leading-relaxed font-light mb-4 text-sm md:text-base">
+                            <p>
+                                Today, I work as a facilitator and therapist, combining 15 years of experience in energy work, vibrational therapies, and embodiment practices to help people navigate deep life transitions. I have had the honor of supporting over 100 individuals in both personal and group journeys, helping them move from exhaustion to clarity and renewed power.
+                            </p>
+                            <p>
+                                My approach is deeply grounded because I know the world you are stepping out of. For years, alongside my training in healing and spiritual work, I built a demanding professional path in sustainability and climate change mitigation. I hold a PhD in Urban Environmental Engineering. I understand the intense pressure to perform, the weight of carrying heavy responsibilities, and how easily we can lose our inner compass while building a "successful" outer life.
+                            </p>
+                            <p>
+                                This dual background allows me to hold a space that respects both the practical, logical realities of your daily life and the quiet depth needed for true transformation. I chose the Bucegi Mountains deliberately. It is a place I know intimately, and one that has brought me profound clarity and turning-point insights. I guide this journey from a lived relationship with the mountain, not borrowed mythology.
+                            </p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-brand-forest relative overflow-hidden">
+        <div class="absolute inset-0 opacity-5 bg-[url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80')] bg-cover bg-center mix-blend-overlay"></div>
+        
+        <div class="container mx-auto px-6 max-w-5xl relative z-10">
+            <div class="text-center mb-12">
+                <span class="font-sans text-brand-gold font-bold tracking-widest uppercase text-xs">What others say</span>
+                <h2 class="font-serif text-3xl md:text-4xl text-brand-cream mt-4 mb-6">Real stories from participants</h2>
+                <div class="w-16 h-1 bg-brand-sage mx-auto rounded-full"></div>
+            </div>
+            
+            <!-- Masonry Grid for 5 Testimonials -->
+            <div class="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6">
+                <!-- Testimonial 1 -->
+                <div class="bg-white/5 border border-brand-sage/20 p-8 rounded-2xl backdrop-blur-sm break-inside-avoid shadow-lg hover:border-brand-gold/50 transition-colors">
+                    <div class="text-brand-gold mb-4 text-4xl font-serif leading-none">"</div>
+                    <p class="text-brand-sand font-light text-sm leading-relaxed mb-6 italic">I found the event friendly and welcoming. I appreciated the way Mara Regina, the practitioner, led us through the session. I enjoyed the drumming. I came away thinking about the importance of living in the moment and having courage to make change in one's life.</p>
+                    <div class="text-brand-gold font-serif text-sm font-medium">— Stephen</div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-white/5 border border-brand-sage/20 p-8 rounded-2xl backdrop-blur-sm break-inside-avoid shadow-lg hover:border-brand-gold/50 transition-colors">
+                    <div class="text-brand-gold mb-4 text-4xl font-serif leading-none">"</div>
+                    <p class="text-brand-sand font-light text-sm leading-relaxed mb-6 italic">Thank you, Mara Regina, for the lovely experience! It gave me a sense of peace and grounding.</p>
+                    <div class="text-brand-gold font-serif text-sm font-medium">— D. Boyadjieva</div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-white/5 border border-brand-sage/20 p-8 rounded-2xl backdrop-blur-sm break-inside-avoid shadow-lg hover:border-brand-gold/50 transition-colors">
+                    <div class="text-brand-gold mb-4 text-4xl font-serif leading-none">"</div>
+                    <p class="text-brand-sand font-light text-sm leading-relaxed mb-6 italic">I attended two gatherings led by Mara Regina — a cacao ritual and a drum meditation with movement. They were welcoming experiences, guided with great sensitivity.<br><br>Mara Regina creates a safe, human, and deeply present space, where each person can experience the journey in their own way, without pressure. You can truly feel the care and genuine intention she brings to her work.</p>
+                    <div class="text-brand-gold font-serif text-sm font-medium">— R. Martins</div>
+                </div>
+                
+                <!-- Testimonial 4 -->
+                <div class="bg-white/5 border border-brand-sage/20 p-8 rounded-2xl backdrop-blur-sm break-inside-avoid shadow-lg hover:border-brand-gold/50 transition-colors">
+                    <div class="text-brand-gold mb-4 text-4xl font-serif leading-none">"</div>
+                    <p class="text-brand-sand font-light text-sm leading-relaxed mb-6 italic">I attended several events. Soothing with words, music and drum. Mysterious tarot. Cooperative voice of joy, from the earth.<br><br>They brought me calm and authentic connection to myself when I needed it most, even if I didn't always realize it, this world demands we slow down.</p>
+                    <div class="text-brand-gold font-serif text-sm font-medium">— Alexandre</div>
+                </div>
+                
+                <!-- Testimonial 5 -->
+                <div class="bg-white/5 border border-brand-sage/20 p-8 rounded-2xl backdrop-blur-sm break-inside-avoid shadow-lg hover:border-brand-gold/50 transition-colors">
+                    <div class="text-brand-gold mb-4 text-4xl font-serif leading-none">"</div>
+                    <p class="text-brand-sand font-light text-sm leading-relaxed mb-6 italic">Mara Regina offered me a session during a challenging period in my life. She is a deeply grounded and extraordinary human being. During the session, I felt truly cared for and empathised with—exactly what I needed at the time. The time I spent with Mara Regina lifted my energy and helped me reconnect with my center.</p>
+                    <div class="text-brand-gold font-serif text-sm font-medium">— Z. Kalhori</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pt-16 pb-8 bg-brand-sand relative">
+        <div class="container mx-auto px-6 max-w-6xl mt-4">
+            <div class="text-center mb-12">
+                <span class="font-sans text-brand-sage font-bold tracking-widest uppercase text-xs block mb-4">Accommodation</span>
+                <h2 class="font-serif text-4xl md:text-5xl text-brand-primary mb-6">Where You Will Stay</h2>
+                <div class="w-16 h-1 bg-brand-gold mx-auto mb-6 rounded-full"></div>
+                <p class="max-w-2xl mx-auto text-base md:text-lg font-light text-brand-charcoal">
+                    You will be based in Bușteni, a mountain town that offers both access and comfort — close enough to the wildness of the Bucegi, yet grounded enough to support rest, integration, and ease.
+                </p>
+                <p class="max-w-2xl mx-auto text-base md:text-lg font-light text-brand-charcoal mt-4">
+                    The retreat includes four nights of accommodation, including one night in a traditional mountain hut on the plateau, weather permitting. This contrast is part of the experience: comfort and grounding below, vastness and simplicity above.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <div class="bg-white border border-brand-sage/20 rounded-[2rem] overflow-hidden group shadow-sm hover:shadow-xl transition-all duration-300">
+                    <div class="h-64 overflow-hidden relative slideshow-container" data-interval="4000">
+                        <div class="absolute inset-0 group-hover:scale-105 transition-transform duration-700 z-0">
+                            <img src="https://ik.imagekit.io/livbloom132033/Hotel/hotel-garden.jpg?updatedAt=1779530478605" alt="Vila Steaua Nordului" class="slide-img absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-100">
+                            <img src="https://ik.imagekit.io/livbloom132033/Hotel/hotel-facade.jpg?updatedAt=1779530478632" alt="Vila Steaua Nordului" class="slide-img absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-0">
+                            <img src="https://ik.imagekit.io/livbloom132033/Hotel/terrace.jpg?updatedAt=1779530478716" alt="Vila Steaua Nordului" class="slide-img absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-0">
+                            <img src="https://ik.imagekit.io/livbloom132033/Hotel/room1.jpg?updatedAt=1779530478691" alt="Vila Steaua Nordului" class="slide-img absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-0">
+                            <img src="https://ik.imagekit.io/livbloom132033/Hotel/room2.jpg?updatedAt=1779530478703" alt="Vila Steaua Nordului" class="slide-img absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-0">
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-brand-charcoal/80 to-transparent z-10"></div>
+                        <h3 class="absolute bottom-6 left-6 font-serif text-2xl text-white z-20">Vila Steaua Nordului</h3>
+                    </div>
+                    <div class="p-8">
+                        <p class="font-light text-brand-charcoal leading-relaxed mb-4 text-sm">
+                            Our main accommodation in Bușteni. A welcoming small hotel with views toward the Bucegi range and Caraiman Massif. Combines practical comfort with a peaceful setting, offering an on-site restaurant, terrace, garden, and relaxation spaces.
+                        </p>
+                        <ul class="font-light text-sm text-brand-charcoal/80 space-y-2 mb-6">
+                            <li><span class="text-brand-sage mr-2">✓</span> On-site restaurant, terrace, garden</li>
+                            <li><span class="text-brand-sage mr-2">✓</span> Private bathrooms, Balconies, Wi-Fi</li>
+                            <li><span class="text-brand-sage mr-2">✓</span> <a href="https://pensiuneasteauanordului.ro/" target="_blank" class="underline hover:text-brand-gold transition-colors">Str. Mihai Eminescu nr. 18, Bușteni</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-white border border-brand-sage/20 rounded-[2rem] overflow-hidden group shadow-sm hover:shadow-xl transition-all duration-300">
+                    <div class="h-64 overflow-hidden relative slideshow-container" data-interval="4500">
+                        <div class="absolute inset-0 group-hover:scale-105 transition-transform duration-700 z-0">
+                            <img src="https://ik.imagekit.io/livbloom132033/Hut/caban_zoom.jpeg" alt="Caraiman Hut" class="slide-img absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-100">
+                            <img src="https://ik.imagekit.io/livbloom132033/Hut/Caraiman.png?updatedAt=1779530502810" alt="Caraiman Hut" class="slide-img absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-0">
+                            <img src="https://ik.imagekit.io/livbloom132033/Hut/caban_sunrise.jpeg?updatedAt=1779530502045" alt="Caraiman Hut" class="slide-img absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-0">
+                            <img src="https://ik.imagekit.io/livbloom132033/Hut/hut-front.png" alt="Caraiman Hut" class="slide-img absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-0">
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-brand-charcoal/80 to-transparent z-10"></div>
+                        <h3 class="absolute bottom-6 left-6 font-serif text-2xl text-white z-20">Caraiman Hut (2,025m)</h3>
+                    </div>
+                    <div class="p-8">
+                        <p class="font-light text-brand-charcoal leading-relaxed mb-4 text-sm">
+                            Weather allowing, we spend one night at this restored mountain refuge. Set beneath the dramatic Caraiman Wall, it offers spectacular high-altitude views, cooked meals, and rustic shared lodging that invites a deeper connection with the wild beauty.
+                        </p>
+                        <ul class="font-light text-sm text-brand-charcoal/80 space-y-2 mb-6">
+                            <li><span class="text-brand-sage mr-2">✓</span> Spectacular high-altitude views & warm atmosphere</li>
+                            <li><span class="text-brand-sage mr-2">✓</span> Cooked meals available</li>
+                            <li><span class="text-brand-sage mr-2">✓</span> Shared dorms (no showers; pillows/blankets incl.)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <p class="text-center text-sm text-brand-charcoal/70 mt-10 italic">
+                Note: Accommodation is mainly in double rooms at the hotel, with a small number of single rooms available on request.
+            </p>
+        </div>
+    </section>
+
+    <section class="pt-8 pb-10 bg-brand-neutral" id="apply">
+        <div class="container mx-auto px-6 max-w-6xl">
+            <div class="text-center mb-12">
+                <h2 class="font-serif text-4xl md:text-5xl text-brand-primary mb-6">Invest in yourself</h2>
+                <div class="w-16 h-1 bg-brand-sage mx-auto mb-6 rounded-full"></div>
+                <p class="max-w-2xl mx-auto text-base md:text-lg font-light text-brand-charcoal">
+                    This retreat is intentionally small. The price reflects not only accommodation and logistics, but also the depth of facilitation, the held structure of the journey, and the uniqueness of the setting. Places are limited so the group remains intimate and well supported.
+                </p>
+            </div>
+
+            <div class="flex flex-col md:flex-row justify-center gap-8 mb-12">
+                
+                <div class="bg-white p-8 md:p-10 rounded-[2rem] shadow-sm border border-brand-sage/20 hover:shadow-xl hover:border-brand-gold/30 transition-all duration-300 w-full md:w-1/3 text-center relative flex flex-col">
+                    <h3 class="font-serif text-2xl text-brand-primary mb-2">The Shared Experience</h3>
+                    <p class="text-brand-sage text-sm italic mb-6">Perfect for making friends</p>
+                    <div class="font-sans text-5xl text-brand-burgundy font-bold mb-6">
+                        €940
+                    </div>
+                    <ul class="text-brand-charcoal font-light text-sm space-y-3 mb-8 text-left flex-grow">
+                        <li class="flex items-center"><span class="text-brand-gold mr-3">✓</span> Shared room (same gender)</li>
+                        <li class="flex items-center"><span class="text-brand-gold mr-3">✓</span> Twin beds</li>
+                        <li class="flex items-center"><span class="text-brand-gold mr-3">✓</span> Private bathroom</li>
+                        <li class="flex items-center"><span class="text-brand-gold mr-3">✓</span> Private balcony</li>
+                    </ul>
+                    <a href="https://tally.so/r/81JdMA" target="_blank" class="mt-auto block w-full bg-brand-sage text-white font-bold px-6 py-3.5 rounded-full hover:bg-brand-primary transition-colors shadow-md hover:shadow-lg text-sm md:text-base">Select Shared</a>
+                </div>
+
+                <div class="bg-brand-primary p-8 md:p-10 rounded-[2rem] shadow-2xl border border-brand-burgundy text-center relative w-full md:w-1/3 transform md:-translate-y-4 flex flex-col">
+                    <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -mt-4 bg-brand-gold text-white text-xs font-bold uppercase tracking-wider py-1.5 px-5 rounded-full shadow-md whitespace-nowrap">
+                        Limited Available
+                    </div>
+                    <h3 class="font-serif text-2xl text-brand-cream mb-2">The Private Experience</h3>
+                    <p class="text-brand-gold text-sm italic mb-6">Total privacy & focus</p>
+                    <div class="font-sans text-5xl text-white font-bold mb-6">
+                        €1140
+                    </div>
+                    <ul class="text-brand-sand font-light text-sm space-y-3 mb-8 text-left flex-grow">
+                        <li class="flex items-center"><span class="text-brand-gold mr-3">✓</span> Individual room</li>
+                        <li class="flex items-center"><span class="text-brand-gold mr-3">✓</span> One single bed</li>
+                        <li class="flex items-center"><span class="text-brand-gold mr-3">✓</span> Private bathroom</li>
+                        <li class="flex items-center"><span class="text-brand-gold mr-3">✓</span> Private balcony</li>
+                    </ul>
+                    <a href="https://tally.so/r/81JdMA" target="_blank" class="mt-auto block w-full bg-brand-gold text-brand-primary font-bold px-6 py-3.5 rounded-full hover:bg-white transition-colors shadow-md hover:shadow-lg text-sm md:text-base">Select Private</a>
+                </div>
+
+            </div>
+
+            <p class="text-center text-sm text-brand-charcoal mb-10 italic">Note: The private room upgrade applies to the 3 nights spent at the hotel in Bușteni. The night at Caraiman Hut is shared for all participants and does not include shower facilities.</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 bg-white p-6 md:p-12 rounded-[2rem] shadow-sm border border-brand-sage/10 mb-12">
+                <div>
+                    <h4 class="font-serif text-xl text-brand-forest mb-6 flex items-center">
+                        <span class="w-8 h-8 rounded-full bg-brand-sage/20 flex items-center justify-center text-brand-forest mr-3 flex-shrink-0 text-sm">✓</span> 
+                        The Complete Package (Included)
+                    </h4>
+                    <p class="text-brand-charcoal text-sm italic mb-4 text-left ml-11">Everything is organized for you. You just show up.</p>
+                    <ul class="text-brand-charcoal font-light space-y-3 text-sm pl-11">
+                        <li>• <strong>The Method:</strong> Full immersion in the Embodied Alignment Process.</li>
+                        <li>• <strong>The Practices:</strong> Embodiment work, guided inquiry, meditations, active mountain pilgrimage, immersive drum journeys, and vision-based exercises.</li>
+                        <li>• <strong>The Retreat Experience:</strong> 5 days of transformation and 4 nights accommodation (inc. 1 mountain hut if weather permits). Local mountain transport, cable car fees, and guided hikes.</li>
+                        <li>• <strong>The Container:</strong> Expert guidance and facilitation throughout the retreat in English, held within an intimate, small-group setting.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-serif text-xl text-brand-burgundy mb-6 flex items-center">
+                        <span class="w-8 h-8 rounded-full bg-brand-burgundy/10 flex items-center justify-center text-brand-burgundy mr-3 flex-shrink-0 text-sm">✕</span> 
+                        What Is Not Included
+                    </h4>
+                    <ul class="text-brand-charcoal font-light space-y-3 text-sm pl-11 mb-6">
+                        <li>• Flights or travel to/from Romania</li>
+                        <li>• Meals and personal snacks (Budget ~€30-40/day)</li>
+                        <li>• Personal hiking provisions (e.g., walking poles)</li>
+                        <li>• Optional airport transfer from Bucharest Otopeni (€90)</li>
+                        <li>• Travel insurance and personal expenses</li>
+                    </ul>
+                    <div class="pl-0 md:pl-11">
+                        <div class="p-5 bg-brand-sand/50 rounded-xl text-sm text-brand-charcoal font-light border border-brand-sage/20">
+                            <strong class="font-bold text-brand-primary">🍽️ About meals:</strong> For freedom of choice, meals are not included. We will visit local supermarkets for picnic groceries and share other meals at the hotel or local taverns.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-brand-forest text-brand-sand p-8 md:p-14 rounded-[2rem] border border-brand-sage/40 shadow-xl relative overflow-hidden mb-12">
+                <div class="absolute right-0 top-0 w-64 h-64 bg-brand-sage opacity-10 rounded-full blur-3xl -mr-20 -mt-20 pointer-events-none"></div>
+                <h4 class="font-serif text-2xl md:text-3xl text-brand-cream mb-6">This Retreat May Not Be For You If...</h4>
+                <ul class="font-light space-y-4 text-sm md:text-lg mb-8">
+                    <li class="flex items-start"><span class="text-brand-gold mr-3">✦</span> You are looking for a passive holiday with lots of free time and very little inner work.</li>
+                    <li class="flex items-start"><span class="text-brand-gold mr-3">✦</span> You want transformation without truthful self-reflection, embodied participation, or personal responsibility.</li>
+                    <li class="flex items-start"><span class="text-brand-gold mr-3">✦</span> You are only interested in intellectual insight, but not in working through the body, the emotions, and real-life patterns.</li>
+                    <li class="flex items-start"><span class="text-brand-gold mr-3">✦</span> You are looking for plant medicine work. This is not a plant medicine retreat.</li>
+                </ul>
+                <p class="font-serif italic text-brand-gold text-lg md:text-xl border-t border-brand-sage/30 pt-6">If, on the other hand, you are sincerely ready to stop abandoning yourself and build something more truthful from the inside, this retreat may be exactly the kind of space you need.</p>
+            </div>
+
+            <div class="text-center text-sm font-light text-brand-charcoal space-y-3 bg-brand-sand/50 p-6 md:p-8 rounded-2xl inline-block border border-brand-sage/10 w-full max-w-3xl">
+                <p><strong class="font-bold text-brand-primary tracking-wide block md:inline mb-1 md:mb-0">REGISTRATION DEADLINE:</strong> August 20th, 2026.</p>
+                <p><strong class="font-bold text-brand-primary tracking-wide block md:inline mb-1 md:mb-0">FLIGHTS:</strong> Do NOT buy your ticket until we confirm the group size.</p>
+                <p><strong class="font-bold text-brand-primary tracking-wide block md:inline mb-1 md:mb-0">REFUNDS:</strong> 100% refund available up to 2 months before the start date (July 11, 2026).</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="pt-8 pb-24 bg-brand-sand" id="faq">
+        <div class="container mx-auto px-4 md:px-6 max-w-3xl">
+            <div class="text-center mb-12">
+                <h2 class="font-serif text-3xl md:text-4xl text-brand-primary mb-4">Questions You Are Asking Yourself</h2>
+                <p class="text-brand-sage font-light italic">Transparency. No fine print.</p>
+            </div>
+
+            <div class="space-y-4">
+                
+                <h3 class="font-serif text-xl md:text-2xl text-brand-forest pt-8 pb-4 border-b border-brand-sage/20">The Experience</h3>
+                
+                <details class="group bg-white rounded-2xl border border-brand-sage/20 overflow-hidden [&_summary::-webkit-details-marker]:hidden shadow-sm">
+                    <summary class="flex items-center justify-between p-5 md:p-6 cursor-pointer text-brand-primary font-serif text-base md:text-lg font-medium hover:bg-brand-sand/30 transition-colors">
+                        Do I need to be very spiritual to join?
+                        <span class="transition duration-300 group-open:-rotate-180 text-brand-gold flex-shrink-0 ml-4">
+                            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                        </span>
+                    </summary>
+                    <div class="p-5 md:p-6 pt-0 font-sans font-light text-brand-charcoal text-sm md:text-base leading-relaxed border-t border-brand-sage/10 mt-2">
+                        <p class="pt-4">No. This retreat is designed for people who want something deeper, but may not identify strongly with spiritual labels. The experience includes reflection, ritual, and symbolic places, yet it is held in a grounded and accessible way.</p>
+                    </div>
+                </details>
+
+                <details class="group bg-white rounded-2xl border border-brand-sage/20 overflow-hidden [&_summary::-webkit-details-marker]:hidden shadow-sm">
+                    <summary class="flex items-center justify-between p-5 md:p-6 cursor-pointer text-brand-primary font-serif text-base md:text-lg font-medium hover:bg-brand-sand/30 transition-colors">
+                        Is it going to be too ‘weird’ or esoteric for me?
+                        <span class="transition duration-300 group-open:-rotate-180 text-brand-gold flex-shrink-0 ml-4">
+                            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                        </span>
+                    </summary>
+                    <div class="p-5 md:p-6 pt-0 font-sans font-light text-brand-charcoal text-sm md:text-base leading-relaxed border-t border-brand-sage/10 mt-2">
+                        <p class="pt-4">We are grounded. Yes, we use drums and rituals, but we are not floating in the clouds. You don't need to "believe" in anything—you just need to be open to the experience. And have strong intention!</p>
+                    </div>
+                </details>
+
+                <details class="group bg-white rounded-2xl border border-brand-sage/20 overflow-hidden [&_summary::-webkit-details-marker]:hidden shadow-sm">
+                    <summary class="flex items-center justify-between p-5 md:p-6 cursor-pointer text-brand-primary font-serif text-base md:text-lg font-medium hover:bg-brand-sand/30 transition-colors">
+                        Are psychedelics used?
+                        <span class="transition duration-300 group-open:-rotate-180 text-brand-gold flex-shrink-0 ml-4">
+                            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                        </span>
+                    </summary>
+                    <div class="p-5 md:p-6 pt-0 font-sans font-light text-brand-charcoal text-sm md:text-base leading-relaxed border-t border-brand-sage/10 mt-2">
+                        <p class="pt-4">We do not work with any substance nor plant medicine.</p>
+                    </div>
+                </details>
+                
+                <details class="group bg-white rounded-2xl border border-brand-sage/20 overflow-hidden [&_summary::-webkit-details-marker]:hidden shadow-sm">
+                    <summary class="flex items-center justify-between p-5 md:p-6 cursor-pointer text-brand-primary font-serif text-base md:text-lg font-medium hover:bg-brand-sand/30 transition-colors">
+                        I am an introvert / I need my space.
+                        <span class="transition duration-300 group-open:-rotate-180 text-brand-gold flex-shrink-0 ml-4">
+                            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                        </span>
+                    </summary>
+                    <div class="p-5 md:p-6 pt-0 font-sans font-light text-brand-charcoal text-sm md:text-base leading-relaxed border-t border-brand-sage/10 mt-2">
+                        <p class="pt-4">Except in the mountain hut, where we all share the same space, you will have your own space (or shared with one person). We honor silence as much as we honor connection. You are never forced to share more than you want.</p>
+                    </div>
+                </details>
+
+                <details class="group bg-white rounded-2xl border border-brand-sage/20 overflow-hidden [&_summary::-webkit-details-marker]:hidden shadow-sm">
+                    <summary class="flex items-center justify-between p-5 md:p-6 cursor-pointer text-brand-primary font-serif text-base md:text-lg font-medium hover:bg-brand-sand/30 transition-colors">
+                        I booked a private room. Why do I have to share at the mountain hut and are there showers?
+                        <span class="transition duration-300 group-open:-rotate-180 text-brand-gold flex-shrink-0 ml-4">
+                            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                        </span>
+                    </summary>
+                    <div class="p-5 md:p-6 pt-0 font-sans font-light text-brand-charcoal text-sm md:text-base leading-relaxed border-t border-brand-sage/10 mt-2">
+                        <p class="pt-4">The night at Caraiman Hut (2,025m) is an authentic mountain experience. Due to the remote location and limited resources of high-altitude refuges, all lodging is in shared dorms and <strong>there are no shower facilities</strong> for this specific night. This one night of shared "mountain living" is a key part of the group journey and the Ascent phase. Your private room and a hot shower will be waiting for you back in Bușteni the following day.</p>
+                    </div>
+                </details>
+
+                <details class="group bg-white rounded-2xl border border-brand-sage/20 overflow-hidden [&_summary::-webkit-details-marker]:hidden shadow-sm">
+                    <summary class="flex items-center justify-between p-5 md:p-6 cursor-pointer text-brand-primary font-serif text-base md:text-lg font-medium hover:bg-brand-sand/30 transition-colors">
+                        Are the hikes very intense?
+                        <span class="transition duration-300 group-open:-rotate-180 text-brand-gold flex-shrink-0 ml-4">
+                            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                        </span>
+                    </summary>
+                    <div class="p-5 md:p-6 pt-0 font-sans font-light text-brand-charcoal text-sm md:text-base leading-relaxed border-t border-brand-sage/10 mt-2">
+                        <p class="pt-4">No. You need to be healthy and active. The retreat is moderate and energising rather than extreme. You should be comfortable walking on mountain terrain for several hours, but this is not designed as a high-performance trekking experience. We are hiking on the mountains (Bucegi Plateau) and walking in nature daily. On one of the days we may hike between 6 and 8 hours at a moderate pace. We will shorten the distance in case of bad weather conditions. We will not hike in steep areas, but on the plateau. The purpose of the hiking is perspective, embodiment, and connection — not physical proving.</p>
+                    </div>
+                </details>
+
+                <details class="group bg-white rounded-2xl border border-brand-sage/20 overflow-hidden [&_summary::-webkit-details-marker]:hidden shadow-sm">
+                    <summary class="flex items-center justify-between p-5 md:p-6 cursor-pointer text-brand-primary font-serif text-base md:text-lg font-medium hover:bg-brand-sand/30 transition-colors">
+                        Will I have internet and phone signal during the retreat?
+                        <span class="transition duration-300 group-open:-rotate-180 text-brand-gold flex-shrink-0 ml-4">
+                            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                        </span>
+                    </summary>
+                    <div class="p-5 md:p-6 pt-0 font-sans font-light text-brand-charcoal text-sm md:text-base leading-relaxed border-t border-brand-sage/10 mt-2">
+                        <p class="pt-4">In the town of Bușteni and at our hotel, connectivity is reliable. On the mountain plateau, signal exists but can be intermittent or weak depending on the specific location. Regarding the night at the Caraiman Hut, we are currently verifying the specific Wi-Fi and signal status and will update this information soon. However, we encourage you to view the mountain phase as a valuable opportunity to "unplug" and fully immerse yourself in the environment.</p>
+                    </div>
+                </details>
+
+                <details class="group bg-white rounded-2xl border border-brand-sage/20 overflow-hidden [&_summary::-webkit-details-marker]:hidden shadow-sm">
+                    <summary class="flex items-center justify-between p-5 md:p-6 cursor-pointer text-brand-primary font-serif text-base md:text-lg font-medium hover:bg-brand-sand/30 transition-colors">
+                        What kind of gear do I need for the hiking?
+                        <span class="transition duration-300 group-open:-rotate-180 text-brand-gold flex-shrink-0 ml-4">
+                            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                        </span>
+                    </summary>
+                    <div class="p-5 md:p-6 pt-0 font-sans font-light text-brand-charcoal text-sm md:text-base leading-relaxed border-t border-brand-sage/10 mt-2">
+                        <p class="pt-4">Good hiking boots are essential for the plateau terrain. You will also need layers of clothing to adjust to changing mountain temperatures, and a reliable rain-proof jacket or rain poncho is mandatory. Walking poles are useful for additional stability on the trail, but they are not compulsory. Don't worry about the specifics yet—a complete, detailed list of what to bring will be sent to you after registration.</p>
+                    </div>
+                </details>
+
+                <details class="group bg-white rounded-2xl border border-brand-sage/20 overflow-hidden [&_summary::-webkit-details-marker]:hidden shadow-sm">
+                    <summary class="flex items-center justify-between p-5 md:p-6 cursor-pointer text-brand-primary font-serif text-base md:text-lg font-medium hover:bg-brand-sand/30 transition-colors">
+                        What happens if the weather changes?
+                        <span class="transition duration-300 group-open:-rotate-180 text-brand-gold flex-shrink-0 ml-4">
+                            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                        </span>
+                    </summary>
+                    <div class="p-5 md:p-6 pt-0 font-sans font-light text-brand-charcoal text-sm md:text-base leading-relaxed border-t border-brand-sage/10 mt-2">
+                        <p class="pt-4">The mountain always sets the final conditions. We keep a clear structure and intention for the journey, while remaining flexible with exact logistics if weather or safety requires adjustment. The inner arc of the retreat remains intact even if practical details shift.</p>
+                    </div>
+                </details>
+
+                <details class="group bg-white rounded-2xl border border-brand-sage/20 overflow-hidden [&_summary::-webkit-details-marker]:hidden shadow-sm">
+                    <summary class="flex items-center justify-between p-5 md:p-6 cursor-pointer text-brand-primary font-serif text-base md:text-lg font-medium hover:bg-brand-sand/30 transition-colors">
+                        Is this retreat suitable if I am in a life or career transition?
+                        <span class="transition duration-300 group-open:-rotate-180 text-brand-gold flex-shrink-0 ml-4">
+                            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                        </span>
+                    </summary>
+                    <div class="p-5 md:p-6 pt-0 font-sans font-light text-brand-charcoal text-sm md:text-base leading-relaxed border-t border-brand-sage/10 mt-2">
+                        <p class="pt-4">Yes. In fact, that is one of the clearest fits for this retreat. It is designed for moments when something is shifting, when perspective is needed, and when the next chapter has not yet fully clarified itself.</p>
+                    </div>
+                </details>
+
+                <h3 class="font-serif text-xl md:text-2xl text-brand-forest pt-8 pb-4 border-b border-brand-sage/20">Logistics & Food</h3>
+
+                <details class="group bg-white rounded-2xl border border-brand-sage/20 overflow-hidden [&_summary::-webkit-details-marker]:hidden shadow-sm">
+                    <summary class="flex items-center justify-between p-5 md:p-6 cursor-pointer text-brand-primary font-serif text-base md:text-lg font-medium hover:bg-brand-sand/30 transition-colors">
+                        Why is food not included in the price?
+                        <span class="transition duration-300 group-open:-rotate-180 text-brand-gold flex-shrink-0 ml-4">
+                            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                        </span>
+                    </summary>
+                    <div class="p-5 md:p-6 pt-0 font-sans font-light text-brand-charcoal text-sm md:text-base leading-relaxed border-t border-brand-sage/10 mt-2">
+                        <p class="pt-4">Freedom. We do not provide meals directly. Instead, you choose from local menus at restaurants and taverns to ensure you eat exactly what suits your personal needs. For picnics, we visit a supermarket together so you can select your own supplies. (Estimated budget approx. €30-40/day).</p>
+                    </div>
+                </details>
+
+                <details class="group bg-white rounded-2xl border border-brand-sage/20 overflow-hidden [&_summary::-webkit-details-marker]:hidden shadow-sm">
+                    <summary class="flex items-center justify-between p-5 md:p-6 cursor-pointer text-brand-primary font-serif text-base md:text-lg font-medium hover:bg-brand-sand/30 transition-colors">
+                        How do you handle allergies or dietary limitations?
+                        <span class="transition duration-300 group-open:-rotate-180 text-brand-gold flex-shrink-0 ml-4">
+                            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                        </span>
+                    </summary>
+                    <div class="p-5 md:p-6 pt-0 font-sans font-light text-brand-charcoal text-sm md:text-base leading-relaxed border-t border-brand-sage/10 mt-2">
+                        <p class="pt-4">Since you choose your own restaurant meals and supermarket supplies, you have full control over your diet during most of the retreat. However, for the dinner and breakfast at <strong>Caraiman Hut</strong>, please inform us of any severe allergies or dietary limitations during registration. We will coordinate with the hut managers to see what is possible. For those with highly restrictive diets, we strongly recommend purchasing additional safe snacks or supplies during our supermarket trip in Bușteni as a reliable backup.</p>
+                    </div>
+                </details>
+
+                <details class="group bg-white rounded-2xl border border-brand-sage/20 overflow-hidden [&_summary::-webkit-details-marker]:hidden shadow-sm">
+                    <summary class="flex items-center justify-between p-5 md:p-6 cursor-pointer text-brand-primary font-serif text-base md:text-lg font-medium hover:bg-brand-sand/30 transition-colors">
+                        How do I get to Busteni from Bucharest?
+                        <span class="transition duration-300 group-open:-rotate-180 text-brand-gold flex-shrink-0 ml-4">
+                            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                        </span>
+                    </summary>
+                    <div class="p-5 md:p-6 pt-0 font-sans font-light text-brand-charcoal text-sm md:text-base leading-relaxed border-t border-brand-sage/10 mt-2">
+                        <p class="pt-4 mb-3"><strong class="text-brand-primary">1. The Easy Way:</strong> Book our optional Group Transfer (€90 round trip). We pick you up in Bucharest airport and drop you at the hotel.</p>
+                        <p class="mb-2"><strong class="text-brand-primary">2. The Independent Way:</strong></p>
+                        <ul class="space-y-2 list-disc list-inside">
+                            <li><strong>By Group Transfer:</strong> You can book a direct bus transfer independently from the airport to Bușteni. Check options and request hotel drop-off at <a href="https://mobile.autogari.ro/Transport/Otopeni-Busteni" target="_blank" class="text-brand-gold hover:underline font-medium">Autogari.ro</a>.</li>
+                            <li><strong>By Train:</strong> From Otopeni Airport (station Aeroport Henri Coandă), take the direct airport train to <strong>București Nord</strong>. From there, transfer to a train bound for <strong>Bușteni</strong>. You can search for the full route and purchase tickets via the <a href="https://bilete.cfrcalatori.ro/ro-RO/Rute-trenuri/Aeroport-Henri-Coanda/Busteni?" target="_blank" class="text-brand-gold hover:underline font-medium">CFR Calatori website</a>.</li>
+                        </ul>
+                    </div>
+                </details>
+
+                <details class="group bg-white rounded-2xl border border-brand-sage/20 overflow-hidden [&_summary::-webkit-details-marker]:hidden shadow-sm">
+                    <summary class="flex items-center justify-between p-5 md:p-6 cursor-pointer text-brand-primary font-serif text-base md:text-lg font-medium hover:bg-brand-sand/30 transition-colors">
+                        Can I come alone?
+                        <span class="transition duration-300 group-open:-rotate-180 text-brand-gold flex-shrink-0 ml-4">
+                            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                        </span>
+                    </summary>
+                    <div class="p-5 md:p-6 pt-0 font-sans font-light text-brand-charcoal text-sm md:text-base leading-relaxed border-t border-brand-sage/10 mt-2">
+                        <p class="pt-4">Yes. Coming alone is completely welcome, and many people find that solo arrival allows them to enter the retreat more openly. The group setting is intentionally warm, intimate, and supportive. If you choose the Shared Room option, we will match you with another participant of the same gender.</p>
+                    </div>
+                </details>
+
+                <h3 class="font-serif text-xl md:text-2xl text-brand-forest pt-8 pb-4 border-b border-brand-sage/20">Money & Commitment</h3>
+                
+                <details class="group bg-white rounded-2xl border border-brand-sage/20 overflow-hidden [&_summary::-webkit-details-marker]:hidden shadow-sm">
+                    <summary class="flex items-center justify-between p-5 md:p-6 cursor-pointer text-brand-primary font-serif text-base md:text-lg font-medium hover:bg-brand-sand/30 transition-colors">
+                        What is the cancellation policy?
+                        <span class="transition duration-300 group-open:-rotate-180 text-brand-gold flex-shrink-0 ml-4">
+                            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                        </span>
+                    </summary>
+                    <div class="p-5 md:p-6 pt-0 font-sans font-light text-brand-charcoal text-sm md:text-base leading-relaxed border-t border-brand-sage/10 mt-2">
+                        <p class="pt-4">We offer a 100% refund up to 2 months before the retreat (until July 11, 2026). After that date, there are no refunds. Why? Because commitment is the first step of the ritual. Once you are in, be all in.</p>
+                    </div>
+                </details>
+                
+                <details class="group bg-white rounded-2xl border border-brand-sage/20 overflow-hidden [&_summary::-webkit-details-marker]:hidden shadow-sm">
+                    <summary class="flex items-center justify-between p-5 md:p-6 cursor-pointer text-brand-primary font-serif text-base md:text-lg font-medium hover:bg-brand-sand/30 transition-colors">
+                        Is there a payment plan?
+                        <span class="transition duration-300 group-open:-rotate-180 text-brand-gold flex-shrink-0 ml-4">
+                            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                        </span>
+                    </summary>
+                    <div class="p-5 md:p-6 pt-0 font-sans font-light text-brand-charcoal text-sm md:text-base leading-relaxed border-t border-brand-sage/10 mt-2">
+                        <p class="pt-4">You secure your spot with a deposit today. The remaining balance is due by August 10th (or as per confirmation email details).</p>
+                    </div>
+                </details>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-brand-charcoal pt-24 pb-12 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80')] bg-cover bg-center"></div>
+        
+        <div class="container mx-auto px-6 max-w-4xl text-center relative z-10">
+            <h2 class="font-serif text-3xl md:text-5xl text-brand-cream mb-6">Ready to cross the threshold?</h2>
+            <p class="font-light text-brand-sand/80 text-base md:text-lg mb-10 max-w-2xl mx-auto leading-relaxed">
+                If this retreat speaks to you, trust that response. You do not need to have everything figured out before coming. You only need to recognise that something in you is asking for space, clarity, and a more honest way forward.
+            </p>
+            
+            <a href="https://tally.so/r/81JdMA" target="_blank" class="inline-block bg-brand-gold text-brand-primary font-bold px-10 md:px-12 py-4 md:py-5 rounded-full uppercase tracking-widest hover:bg-white hover:text-brand-primary transition-all duration-300 shadow-[0_8px_20px_rgba(234,179,8,0.3)] transform hover:-translate-y-1 mb-20 text-sm md:text-base">
+                Apply for the 2026 Journey
+            </a>
+
+            <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-brand-sand/50 font-light">
+                <div class="flex items-center gap-2 mb-4 md:mb-0">
+                    <div class="w-8 h-8 rounded-full flex items-center justify-center overflow-hidden bg-white">
+                        <img src="assets/Living_Bloom_Logo.png" alt="Living Bloom Logo" class="w-full h-full object-cover">
+                    </div>
+                    <p>&copy; 2026 Living Bloom. All rights reserved.</p>
+                </div>
+                
+                <div class="flex flex-wrap justify-center gap-4 md:gap-6 mt-2 md:mt-0">
+                    <a href="#" class="hover:text-brand-gold transition-colors">Terms of Service</a>
+                    <a href="#" class="hover:text-brand-gold transition-colors">Privacy Policy</a>
+                    <a href="mailto:livingbloomretreats@gmail.com" class="hover:text-brand-gold transition-colors">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Slideshow Logic for Accommodation Images
+        document.addEventListener('DOMContentLoaded', () => {
+            const slideshows = document.querySelectorAll('.slideshow-container');
+            
+            slideshows.forEach(slideshow => {
+                const images = slideshow.querySelectorAll('.slide-img');
+                if (images.length <= 1) return;
+                
+                let currentIndex = 0;
+                const intervalTime = parseInt(slideshow.getAttribute('data-interval')) || 4000;
+                
+                setInterval(() => {
+                    // Fade out current
+                    images[currentIndex].classList.remove('opacity-100');
+                    images[currentIndex].classList.add('opacity-0');
+                    
+                    // Move to next
+                    currentIndex = (currentIndex + 1) % images.length;
+                    
+                    // Fade in next
+                    images[currentIndex].classList.remove('opacity-0');
+                    images[currentIndex].classList.add('opacity-100');
+                }, intervalTime);
+            });
+        });
+    </script>
+
+</body>
+</html>
