@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Received - Living Bloom</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,600;6..12,700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind Config based on Living Bloom Brand Identity -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['"Nunito Sans"', 'sans-serif'],
+                        'serif': ['Lora', 'serif'],
+                    },
+                    colors: {
+                        brand: {
+                            primary: '#660240',      // Deep Alchemical Burgundy
+                            forest: '#334139',       // Deep Forest / Sage Green
+                            neutral: '#F5F5F4',      // Mushroom / Stone Beige
+                            accent: '#EAB308',       // Solar Gold
+                            sand: '#F7F5F0',         // Warm neutral background
+                            sage: '#8A9A5B',         // Grounded green
+                            burgundy: '#6B2D5C',     // Alchemical deepening, headers
+                            gold: '#D4AF37',         // Solar gold, accents
+                            charcoal: '#2C3E50',     // Text
+                            cream: '#FFFDD0'         // Light accents
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans text-brand-charcoal bg-brand-sand antialiased selection:bg-brand-accent selection:text-white flex flex-col min-h-screen">
+
+    <!-- TOP BANNER SECTION -->
+    <div class="relative w-full h-[40vh] md:h-[45vh] overflow-hidden bg-brand-charcoal flex items-center justify-center">
+        <!-- Fallback text for preview environment -->
+        <span class="text-brand-sage/40 font-serif italic text-sm absolute">Banner Image Area</span>
+        
+        <!-- Banner Image -->
+        <img src="assets/banner-bucegi.png" alt="Bucegi Mountains Plateau" class="absolute inset-0 w-full h-full object-cover object-center opacity-90 z-10" onerror="this.style.display='none'">
+        
+        <!-- Gradient fading into the background color to create a seamless transition -->
+        <div class="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-brand-sand to-transparent z-20"></div>
+    </div>
+
+    <!-- MAIN CONTENT SECTION -->
+    <main class="relative z-30 -mt-16 md:-mt-24 px-4 md:px-6 pb-20 flex-grow flex items-start justify-center">
+        
+        <!-- Confirmation Card -->
+        <div class="w-full max-w-2xl bg-white rounded-3xl shadow-xl p-6 sm:p-8 md:p-14 text-center border-t-4 border-brand-gold relative overflow-hidden">
+            
+            <!-- Subtle background accent inside card -->
+            <div class="absolute top-0 right-0 -mr-12 -mt-12 w-32 h-32 bg-brand-sage opacity-10 rounded-full blur-2xl pointer-events-none"></div>
+
+            <!-- Logo -->
+            <div class="mb-6 md:mb-8 flex justify-center relative min-h-[80px] items-center">
+                <span class="text-brand-sage/40 font-serif italic text-xs absolute">Logo Area</span>
+                <img src="assets/Living_Bloom_Logo.png" 
+                     alt="Living Bloom Logo" 
+                     class="w-20 md:w-24 h-auto mx-auto hover:scale-105 transition-transform duration-300 relative z-10"
+                     onerror="this.style.display='none'">
+            </div>
+
+            <!-- Headline -->
+            <h1 class="font-serif text-3xl md:text-4xl text-brand-primary font-medium tracking-wide mb-4">
+                Registration Received.
+            </h1>
+            
+            <p class="font-sans font-bold tracking-[0.15em] text-brand-sage uppercase mb-8 text-xs md:text-sm">
+                The Bucegi Journey
+            </p>
+
+            <!-- Body Copy -->
+            <div class="font-sans text-brand-charcoal text-base md:text-lg font-light leading-relaxed space-y-6 max-w-lg mx-auto text-left">
+                
+                <p class="text-center">
+                    Thank you for stepping forward. Your registration for the retreat has been successfully submitted.
+                </p>
+
+                <div class="bg-brand-sand/50 border border-brand-sage/20 p-6 rounded-2xl">
+                    <p class="mb-4">
+                        Please check your inbox for an email from <strong>Living Bloom Retreats</strong> containing your payment details.
+                    </p>
+                    
+                    <h3 class="font-sans font-semibold text-brand-primary uppercase tracking-widest text-sm mb-3">Next Steps:</h3>
+                    
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <span class="text-brand-accent mr-3 mt-1">✦</span>
+                            <span>Transfer your deposit within <strong>48 hours</strong> to secure your room.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-brand-accent mr-3 mt-1">✦</span>
+                            <span>Once your deposit is received, I will send you a Welcome Pack with detailed information to help you prepare.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <p class="text-center pt-4 italic">
+                    I look forward to welcoming you to the mountains.
+                </p>
+                
+                <!-- Signature / Contact -->
+                <div class="text-center pt-6 border-t border-brand-sage/20 mt-8">
+                    <p class="font-serif text-xl text-brand-primary mb-1">Regina D'Gaia</p>
+                    <p class="font-sans font-bold tracking-widest text-brand-sage uppercase text-xs mb-3">Living Bloom</p>
+                    <p class="font-sans text-sm font-light">
+                        <a href="mailto:livingbloomretreats@gmail.com" class="hover:text-brand-accent transition-colors">livingbloomretreats@gmail.com</a> &nbsp;|&nbsp; 
+                        <a href="tel:+32477967899" class="hover:text-brand-accent transition-colors">+32 477 96 78 99</a>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
